@@ -1,0 +1,434 @@
+@media(max-width: 1200px) {
+    .promo-buttons {
+        display: none;
+    }
+
+    .fitnessclub-buttons {
+        display: none;
+    }
+
+    .fitnessclub-slides {
+        &.container {
+            width: 100%;
+        }
+    }
+
+    .fitnessclub-carousel {
+        padding-bottom: 40px;
+        margin: 0 auto 20px auto;
+    }
+
+}
+
+@media(max-width: 986px) {
+
+    .container {
+        padding: 0 10px
+    }
+
+    .container_catalog {
+        padding: 0 10px
+    }
+
+    .generalpage-search .search-catalog {
+        overflow: auto;
+    }
+
+    .promo-region {
+        height: auto;
+        position: relative;
+    }
+
+
+    .generalpage-promo {
+        height: auto;
+    }
+
+    .promoaction-header .promoaction-location {
+        margin-left: 5px;
+        min-width: 175px;
+    }
+
+    .promoaction-header .icon {
+        margin-right: 5px;
+    }
+
+    .compare-section {
+        width: 45%;
+        margin-right: 10px;
+    }
+
+    .footer-content {
+        width: 90%;
+    }
+
+    .footer-column {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .footer-column .columntitle {
+        margin-bottom: 10px;
+    }
+
+    .generalpage-footer {
+        height: auto;
+        background: url(../img/general-page-background-third.png) center no-repeat;
+        background-size: cover;
+        padding: 30px 0;
+    }
+
+    .search-catalog {
+        display: none;
+    }
+    
+    .search-catalog.mobile {
+        display: block;
+    }
+
+    .profiletitle-region .main-title {
+        margin-top: 35px;
+    }
+
+    .profileselector-region .account, .profileselector-region .application {
+        font-size: 18px;
+    }
+
+    .profileapplications-region {
+        overflow: auto;
+
+        .profile-application {
+            width: 900px;
+        }
+
+        .profileapplications-header {
+            width: 825px;
+            max-width: initial;
+        }
+    }
+
+
+
+
+}
+
+@media(max-width: 767px) {
+
+    .profile-form .profileservice, .specialoffers-form .profileservice, .generalpage-search .profileservice {
+        width: 30%;
+    }
+
+    .generalpage-information {
+        font-size: 16px;
+    }
+
+    .generalpage-preview .maintitle {
+        font-size: 36px;
+        margin-top: 120px;
+    }
+
+    .promo-region {
+        width: 90%;
+    }
+
+    .container_catalog {
+        width: 93%;
+    }
+
+    .sameclub-region {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .preview-logotype .previewpreview {
+        font-size: 18px;
+    }
+
+    .preview-logotype .logotype {
+        width: 140px;
+    }
+
+    .preview-text .name {
+        font-size: 28px;
+    }
+
+    .preview-text .location {
+        font-size: 20px;
+    }
+
+    .popup-sendapplication {
+        max-width: 90%;
+    }
+
+    .profileselector-region .account, .profileselector-region .application {
+        font-size: 14px;
+    }
+    
+    .profiletitle-region .main-title {
+        font-size: 26px;
+    }
+
+    .profileimages-region {
+        flex-wrap: wrap;
+    }
+
+    .profilelogo-region {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 30px;
+        & .logo-section {
+            width: 280px;
+            text-align: left;
+            margin: 0 auto;
+        }
+    }
+
+    .profilephotos-region .photo-section {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .profilephotos-region {
+        margin: 0 auto;
+    }
+
+    .personal-account .saveandsend, .personal-account .upload-logo, .personal-account .upload-photo, .personal-account .upload-offerimage {
+        width: 280px;
+        height: 53px;
+        justify-content: center;
+        font-size: 25px;
+        border-radius: 20px;
+    }
+
+    .profile-form .form-section.-short {
+        max-width: 100%;
+    }
+
+    .two-fields {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    .form-fields .form-section.-address {
+        max-width: 100%;
+    }
+
+    .form-services .formtitle {
+        text-align: center;
+    }
+
+    .ticket-region {
+        flex-wrap: wrap;
+    }
+
+    .ticket-section {
+        max-width: 30%;
+        width: 30%;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .ticket-region .ticketprice {
+        width: 30%;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .specialoffer-artwork {
+        margin: 20px auto;
+        width: 280px;
+        text-align: left;
+    }
+
+    .specialoffers-form .form-section.-short {
+        max-width: 100%;
+        & .upload-offerimage {
+            margin-bottom: 20px;
+        }
+    }
+
+    .personal-account .saveandsend {
+        width: 100%;
+        height: 78px;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    .promoaction-section.lowerprice {
+        width: 48%;
+        .promoaction-content .description {
+            font-size: 14px;
+        }
+
+        .promoaction-header .promoaction-location {
+            justify-content: flex-end;
+        }
+    }
+
+    .howtobuycheaper-images {
+        display: flex;
+        flex-direction: column;
+    
+        .howtobuycheaperimage.-small {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    }
+
+    .howtobuycheaper-maintitle {
+        font-size: 26px;
+    }
+
+    .promoactions-maintitle .maintitle {
+        font-size: 40px;
+        text-align: initial;
+    }
+
+    .promoactions-maintitle .maindescription {
+        font-size: 18px;
+    }
+    
+    
+
+}
+
+@media(max-width: 576px) {
+
+    
+    .promoactions-maintitle .maintitle {
+        font-size: 34px;
+    }
+
+    .promoactions-maintitle .maindescription {
+        font-size: 16px;
+    }
+
+    .promoaction-section.lowerprice {
+        width: 85%;
+    }
+
+    .search-catalog .gym_box .name_box {
+        width: 35%;
+    }
+
+    .search-catalog .gym_box .address_box {
+        width: 60%;
+    }
+
+    .generalpage-information {
+        font-size: 12px;
+    }
+
+    .generalpage-information .icon {
+        width: 8px;
+    }
+
+    .generalpage-preview {
+        height: 350px;
+        background-position: center;
+    }
+
+    .generalpage-preview .maintitle {
+        font-size: 24px;
+    }
+
+    .search-catalog {
+        .gym_box {
+            .searchcatalog-durations {
+                font-size: 10px;
+                & .onetime {
+                    width: 20%;
+                }
+    
+                & .onemonth {
+                    width: 20%;
+                    margin-right: 0;
+                }
+    
+                & .threemonths {
+                    width: 20%;
+                    margin-right: 0;
+                }
+    
+                & .sixmonths {
+                    width: 20%;
+                    margin-right: 0;
+                }
+    
+                & .twelvemonths {
+                    width: 20%;
+                    margin-right: 0;
+                }
+            }
+        }
+
+    }
+    .promo-title {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .generalpage-promo {
+        background-size: cover;
+        padding: 20px 0;
+    }
+
+    .promo-region {
+        padding-bottom: 30px;
+    }
+
+    .promo-slides .preview {
+        height: 350px;
+    }
+
+    .preview-logotype .previewpreview {
+        font-size: 12px;
+    }
+
+    .preview-logotype .logotype {
+        width: 80px;
+    }
+
+    .preview-text {
+        align-items: end;
+    }
+
+    .preview-text .name {
+        font-size: 17px;
+    }
+
+    .preview-text .location {
+        font-size: 16px;
+    }
+
+    .preview-text .previewlocation {
+        width: 14px;
+    }
+
+    .fitnessclub-preview .profile-services {
+        margin-top: 7%;
+    }
+
+    .preview-categories .profileservice {
+        max-width: 100%;
+        width: 24%;
+    }
+
+    .fitnessclub-slides .photo {
+        height: 170px;
+    }
+
+    .tariff-section .title {
+        font-size: 12px;
+    }
+
+    .profileselector-region .account, .profileselector-region .application {
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    .sameclub-header .sameclublogo {
+        width: 75px;
+    }
+
+}

@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=580, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Главная</title>
+
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+
+    <!-- Стили дя JQuery select menu -->
+    <link rel="stylesheet" href="libs/jquery-select-menu/css/default/tail.select-light.css">
+
+    <!-- Стили для JQuery carousel -->
+    <link rel="stylesheet" href="libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
+    <!-- Стили для JQuery modal window -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- Для появления модального окна необходимо обернуть 
+        текст/кнопку/что-либо, на что будут нажимать, 
+        в ссылку вида <a href="#popup_signin" rel="modal:open">...</a>
+    
+        Два моадльных окна уже работают (выбор города и отправка заявки),
+        ещё двум (блок "Спасибо :)" и окно регистрации) необходимо задать элемент,
+        по нажатию на который они будут открываться.
+    -->
+    <div id="popup_location" action="" class="popup-location">
+            <span class="locationtitle">Введите ваше месторасположение</span>
+            <select class="city-list">
+                <option class="option" value="0">Москва</option>
+                <option class="option" value="1">Санкт-Петербург</option>
+                <option class="option" value="2">Новосибирск</option>
+                <option class="option" value="3">Екатеринбург</option>
+                <option class="option" value="4">Нижний Новгород</option>
+                <option class="option" value="5">Самара</option>
+                <option class="option" value="6">Казань</option>
+                <option class="option" value="7">Омск</option>
+                <option class="option" value="8">Челябинск</option>
+                <option class="option" value="9">Ростов-на-Дону</option>
+                <option class="option" value="10">Уфа</option>
+                <option class="option" value="11">Волгоград</option>
+                <option class="option" value="12">Красноярск</option>
+                <option class="option" value="13">Пермь</option>
+                <option class="option" value="14">Воронеж</option>
+                <option class="option" value="15">Саратов</option>
+                <option class="option" value="16">Краснодар</option>
+                <option class="option" value="17">Тольятти</option>
+                <option class="option" value="18">Ижевск</option>
+                <option class="option" value="19">Барнаул</option>
+                <option class="option" value="20">Ульяновск</option>
+                <option class="option" value="21">Тюмень</option>
+                <option class="option" value="22">Иркутск</option>
+                <option class="option" value="23">Владивосток</option>
+                <option class="option" value="24">Ярославль</option>
+                <option class="option" value="25">Хабаровск</option>
+                <option class="option" value="26">Махачкала</option>
+                <option class="option" value="27">Оренбург</option>
+                <option class="option" value="28">Новокузнецк</option>
+                <option class="option" value="29">Томск</option>
+                <option class="option" value="30">Кемерово</option>
+                <option class="option" value="31">Рязань</option>
+                <option class="option" value="32">Астрахань</option>
+                <option class="option" value="33">Пенза</option>
+                <option class="option" value="34">Набережные Челны</option>
+                <option class="option" value="35">Липецк</option>
+                <option class="option" value="36">Тула</option>
+                <option class="option" value="37">Киров</option>
+                <option class="option" value="38">Чебоксары</option>
+                <option class="option" value="39">Калининград</option>
+                <option class="option" value="40">Курск</option>
+                <option class="option" value="41">Брянск</option>
+                <option class="option" value="42">Улан-Удэ</option>
+                <option class="option" value="43">Магнитогорск</option>
+                <option class="option" value="44">Иваново</option>
+                <option class="option" value="45">Тверь</option>
+                <option class="option" value="46">Ставрополь</option>
+                <option class="option" value="47">Белгород</option>
+                <option class="option" value="48">Сочи</option>
+                <option class="option" value="49">Нижний Тагил</option>
+                <option class="option" value="50">Архангельск</option>
+                <option class="option" value="51">Владимир</option>
+                <option class="option" value="52">Смоленск</option>
+                <option class="option" value="53">Курган</option>
+                <option class="option" value="54">Волжский</option>
+                <option class="option" value="55">Чита</option>
+                <option class="option" value="56">Калуга</option>
+                <option class="option" value="57">Орёл</option>
+                <option class="option" value="58">Сургут</option>
+                <option class="option" value="59">Череповец</option>
+                <option class="option" value="60">Владикавказ</option>
+                <option class="option" value="61">Мурманск</option>
+                <option class="option" value="62">Вологда</option>
+                <option class="option" value="63">Саранск</option>
+                <option class="option" value="64">Тамбов</option>
+                <option class="option" value="65">Якутск</option>
+                <option class="option" value="66">Грозный</option>
+                <option class="option" value="67">Стерлитамак</option>
+                <option class="option" value="68">Кострома</option>
+                <option class="option" value="69">Петрозаводск</option>
+                <option class="option" value="70">Нижневартовск</option>
+                <option class="option" value="71">Комсомольск-на-Амуре</option>
+                <option class="option" value="72">Таганрог</option>
+                <option class="option" value="73">Йошкар-Ола</option>
+                <option class="option" value="74">Новороссийск</option>
+                <option class="option" value="75">Братск</option>
+                <option class="option" value="76">Дзержинск</option>
+                <option class="option" value="77">Нальчик</option>
+                <option class="option" value="78">Сыктывкар</option>
+                <option class="option" value="79">Шахты</option>
+                <option class="option" value="80">Орск</option>
+                <option class="option" value="81">Нижнекамск</option>
+                <option class="option" value="82">Ангарск</option>
+                <option class="option" value="83">Балашиха</option>
+                <option class="option" value="84">Старый Оскол</option>
+                <option class="option" value="85">Великий Новгород</option>
+                <option class="option" value="86">Благовещенск</option>
+                <option class="option" value="87">Химки</option>
+                <option class="option" value="88">Прокопьевск</option>
+                <option class="option" value="89">Бийск</option>
+                <option class="option" value="90">Энгельс</option>
+                <option class="option" value="91">Псков</option>
+                <option class="option" value="92">Рыбинск</option>
+                <option class="option" value="93">Балаково</option>
+                <option class="option" value="94">Подольск</option>
+                <option class="option" value="95">Северодвинск</option>
+                <option class="option" value="96">Армавир</option>
+                <option class="option" value="97">Королёв</option>
+                <option class="option" value="98">Южно-Сахалинск</option>
+                <option class="option" value="99">Петропавловск-Камчатский</option>
+                <option class="option" value="100">Сызрань</option>
+                <option class="option" value="101">Норильск</option>
+                <option class="option" value="102">Люберцы</option>
+                <option class="option" value="103">Мытищи</option>
+                <option class="option" value="104">Златоуст</option>
+                <option class="option" value="105">Каменск-Уральский</option>
+                <option class="option" value="106">Новочеркасск</option>
+                <option class="option" value="107">Волгодонск</option>
+                <option class="option" value="108">Абакан</option>
+                <option class="option" value="109">Уссурийск</option>
+                <option class="option" value="110">Находка</option>
+                <option class="option" value="111">Электросталь</option>
+                <option class="option" value="112">Березники</option>
+                <option class="option" value="113">Салават</option>
+                <option class="option" value="114">Миасс</option>
+                <option class="option" value="115">Альметьевск</option>
+                <option class="option" value="116">Рубцовск</option>
+                <option class="option" value="117">Коломна</option>
+                <option class="option" value="118">Ковров</option>
+                <option class="option" value="119">Майкоп</option>
+                <option class="option" value="120">Пятигорск</option>
+                <option class="option" value="121">Одинцово</option>
+                <option class="option" value="122">Копейск</option>
+                <option class="option" value="123">Железнодорожный</option>
+                <option class="option" value="124">Хасавюрт</option>
+                <option class="option" value="125">Новомосковск</option>
+                <option class="option" value="126">Кисловодск</option>
+                <option class="option" value="127">Черкесск</option>
+                <option class="option" value="128">Серпухов</option>
+                <option class="option" value="129">Первоуральск</option>
+                <option class="option" value="130">Нефтеюганск</option>
+                <option class="option" value="131">Новочебоксарск</option>
+                <option class="option" value="132">Нефтекамск</option>
+                <option class="option" value="133">Красногорск</option>
+                <option class="option" value="134">Димитровград</option>
+                <option class="option" value="135">Орехово-Зуево</option>
+                <option class="option" value="136">Дербент</option>
+                <option class="option" value="137">Камышин</option>
+                <option class="option" value="138">Невинномысск</option>
+                <option class="option" value="139">Муром</option>
+                <option class="option" value="140">Батайск</option>
+                <option class="option" value="141">Кызыл</option>
+                <option class="option" value="142">Новый Уренгой</option>
+                <option class="option" value="143">Октябрьский</option>
+                <option class="option" value="144">Сергиев Посад</option>
+                <option class="option" value="145">Новошахтинск</option>
+                <option class="option" value="146">Щёлково</option>
+                <option class="option" value="147">Северск</option>
+                <option class="option" value="148">Ноябрьск</option>
+                <option class="option" value="149">Ачинск</option>
+                <option class="option" value="150">Новокуйбышевск</option>
+                <option class="option" value="151">Елец</option>
+                <option class="option" value="152">Арзамас</option>
+                <option class="option" value="153">Жуковский</option>
+                <option class="option" value="154">Обнинск</option>
+                <option class="option" value="155">Элиста</option>
+                <option class="option" value="156">Пушкино</option>
+                <option class="option" value="157">Артём</option>
+                <option class="option" value="158">Каспийск</option>
+                <option class="option" value="159">Ногинск</option>
+                <option class="option" value="160">Междуреченск</option>
+                <option class="option" value="161">Сарапул</option>
+                <option class="option" value="162">Ессентуки</option>
+                <option class="option" value="163">Домодедово</option>
+                <option class="option" value="164">Ленинск-Кузнецкий</option>
+                <option class="option" value="165">Назрань</option>
+                <option class="option" value="166">Бердск</option>
+                <option class="option" value="167">Анжеро-Судженск</option>
+                <option class="option" value="168">Белово</option>
+                <option class="option" value="169">Великие Луки</option>
+                <option class="option" value="170">Воркута</option>
+                <option class="option" value="171">Воткинск</option>
+                <option class="option" value="172">Глазов</option>
+                <option class="option" value="173">Зеленодольск</option>
+                <option class="option" value="174">Канск</option>
+                <option class="option" value="175">Кинешма</option>
+                <option class="option" value="176">Киселёвск</option>
+                <option class="option" value="177">Магадан</option>
+                <option class="option" value="178">Мичуринск</option>
+                <option class="option" value="179">Новотроицк</option>
+                <option class="option" value="180">Серов</option>
+                <option class="option" value="181">Соликамск</option>
+                <option class="option" value="182">Тобольск</option>
+                <option class="option" value="183">Усолье-Сибирское</option>
+                <option class="option" value="184">Усть-Илимск</option>
+                <option class="option" value="185">Ухта</option>
+            </select>
+            <a href="#" rel="modal:close"><button id="location_submit" class="submit">ОК</button></a>
+        </div>
+        <form id="popup_application" class="popup-sendapplication" method="POST">
+            <div>
+                <span class="applicationtitle">Сотрудник фитнес-центра свяжется с Вами и<br>расскажет о спецусловиях</span>
+                <input id="application_name" type="text" class="input" placeholder="Имя" required>
+                <input id="application_phone" type="text" class="input" placeholder="Телефон" required>
+                <input id="application_email" type="email" class="input" placeholder="E-mail" required>
+            </div>
+            <button id="application_submit" class="submit">ОТПРАВИТЬ</button>
+        </form>
+        <div id="popup_thankyou" class="popup-thankyou">
+            <!-- Видимость регулируется добавлением класса -active -->
+            <span class="title">Спасибо :)</span>
+            <span class="description">Сотрудник фитнес-центра свяжется с вами в<br>ближайшее время!</span>
+        </div>
+        <form id="popup_signin" class="popup-signin">
+            <span class="signintitle">Вход для фитнес-центров</span>
+            <input type="text" class="input" placeholder="Логин" required>
+            <input type="password" class="input -password" placeholder="Пароль" required>
+            <span class="signincomment">* Если у Вас нет логина и пароля, обратитесь к сотрудникам<br>агрегатора
+                фитнес-центров</span>
+            <input type="submit" class="submit" name="signin" value="ВОЙТИ">
+        </form>
+    <div class="generalpage-region">
+        <div class="generalpage-preview">
+            <div class="generalpage-information container">
+                <a href="#popup_location" rel="modal:open"><span class="information-section -dropdown">Москва<img
+                            class="icon" src="img/icon-arrow-down.svg"></span></a>
+                <span class="information-section"><a href="#" class="informationlink">Как это работает</a></span>
+                <span class="information-section"><a href="#" class="informationlink">Цена на фитнес ниже</a></span>
+            </div>
+            <div class="generalpage-maintitle container">
+                <span class="maintitle">НАЙДИТЕ ФИТНЕС-КЛУБ<br>С ЛУЧШИМИ УСЛОВИЯМИ<br>ЗА 5 МИНУТ</span>
+                <span class="maindescription">И ЦЕНЫ НИЖЕ И ВЫБИРАТЬ ПРОЩЕ</span>
+            </div>
+        </div>
+        <div class="generalpage-search container">
+            <span class="searchtitle">Я ищу фитнес-клуб, в котором есть:</span>
+            <div class="profile-services">
+                <label class="profileservice -gym">
+                    <input type="checkbox" class="checkbox">
+                    <img class="service-icon -gym" src="img/1.svg">
+                    <span class="servicedescription -gym">Тренажерные<br>залы и кардио</span>
+                </label>
+                <label class="profileservice -yoga">
+                    <input type="checkbox" class="checkbox">
+                    <img class="service-icon -yoga" src="img/2.svg">
+                    <span class="servicedescription -yoga">Йога и<br>медитация</span>
+                </label>
+                <label class="profileservice -dancing">
+                    <input type="checkbox" class="checkbox">
+                    <img class="service-icon -dancing" src="img/3.svg">
+                    <span class="servicedescription -dancing">Танцевальные направления</span>
+                </label>
+                <label class="profileservice -group">
+                    <input type="checkbox" class="checkbox">
+                    <img class="service-icon -group" src="img/4.svg">
+                    <span class="servicedescription -group">Групповые занятия</span>
+                </label>
+                <label class="profileservice -pools">
+                    <input type="checkbox" class="checkbox">
+                    <img class="service-icon -pools" src="img/5.svg">
+                    <span class="servicedescription -pools">Бассейны и аквааэробика</span>
+                </label>
+                <label class="profileservice -bike">
+                    <input type="checkbox" class="checkbox">
+                    <img class="service-icon -bike" src="img/6.svg">
+                    <span class="servicedescription -bike">ESM и Wellnes тренировки</span>
+                </label>
+                <label class="profileservice -fight">
+                    <input type="checkbox" class="checkbox">
+                    <img class="service-icon -fight" src="img/7.svg">
+                    <span class="servicedescription -fight">Единоборства и самооборона</span>
+                </label>
+                <label class="profileservice -gymnastics">
+                    <input type="checkbox" class="checkbox">
+                    <img class="service-icon -gymnastics" src="img/8.svg">
+                    <span class="servicedescription -gymnastics">Акробатика и гимнастика</span>
+                </label>
+                <label class="profileservice -relax">
+                    <input type="checkbox" class="checkbox">
+                    <img class="service-icon -relax" src="img/9.svg">
+                    <span class="servicedescription -relax">SPA процедуры и relax</span>
+                </label>
+                <label class="profileservice -team">
+                    <input type="checkbox" class="checkbox">
+                    <img class="service-icon -team" src="img/10.svg">
+                    <span class="servicedescription -team">Командные виды спорта</span>
+                </label>
+                <label class="profileservice -various">
+                    <input type="checkbox" class="checkbox">
+                    <img class="service-icon -various" src="img/11.svg">
+                    <span class="servicedescription -various">Разные тренировки</span>
+                </label>
+                <label class="profileservice -bath">
+                    <input type="checkbox" class="checkbox">
+                    <img class="service-icon -bath" src="img/12.svg">
+                    <span class="servicedescription -bath">Баня</span>
+                </label>
+                <label class="profileservice -childcard">
+                    <input type="checkbox" class="checkbox">
+                    <img class="service-icon -childcard" src="img/13.svg">
+                    <span class="servicedescription -childcard">Детская карта</span>
+                </label>
+            </div>
+            <button class="search button">Показать</button>
+            <div class="search-map">
+                <iframe class="searchmap"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d71850.23564869916!2d37.61924238021348!3d55.7504950263344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1562614022488!5m2!1sru!2sru"
+                    width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="search-catalog container_catalog">
+                <div class="searchcatalog-header">
+                    <span class="name">Название</span>
+                    <span class="address">Адрес</span>
+                    <span class="amount">Стоимость</span>
+                </div>
+                <div class="searchcatalog-durations">
+                    <div class="onetime"><span>Разовое<br>посещение</span></div>
+                    <div class="onemonth"><span>1 месяц</span></div>
+                    <div class="threemonths"><span>3 месяца</span></div>
+                    <div class="sixmonths"><span>6 месяцев</span></div>
+                    <div class="twelvemonths"><span>12 месяцев</span></div>
+                </div>
+                <div class="fitnesscenter-section">
+                    <div class="underline"></div>
+                    <div class="fitnesscenter-content">
+                        <div class="fitnesscenter-logo">
+                            <img class="logotype" src="img/fitness-сenter-logo.png">
+                            <span class="name">GYM сеть фитнес-клубов</span>
+                        </div>
+                        <span class="location"><img class="icon-location" src="img/icon-location.svg">Железнодорожная,
+                            11</span>
+                        <span class="dash -onetime">–</span>
+                        <span class="price -onemonth">9700</span>
+                        <span class="dash -threemonths">–</span>
+                        <span class="price -sixmonths">17000</span>
+                        <span class="price -twelvemonths">22000</span>
+                        <a href="#popup_application" rel="modal:open"><button class="sendapplication button">ОТПРАВИТЬ
+                                ЗАЯВКУ</button></a>
+                    </div>
+                </div>
+                <div class="fitnesscenter-section">
+                    <div class="underline"></div>
+                    <div class="fitnesscenter-content">
+                        <div class="fitnesscenter-logo">
+                            <img class="logotype" src="img/fitness-сenter-logo.png">
+                            <span class="name">GYM сеть фитнес-клубов</span>
+                        </div>
+                        <span class="location"><img class="icon-location" src="img/icon-location.svg">Железнодорожная,
+                            11</span>
+                        <span class="dash -onetime">–</span>
+                        <span class="price -onemonth">9700</span>
+                        <span class="dash -threemonths">–</span>
+                        <span class="price -sixmonths">17000</span>
+                        <span class="price -twelvemonths">22000</span>
+                        <a href="#popup_application" rel="modal:open"><button class="sendapplication button">ОТПРАВИТЬ
+                                ЗАЯВКУ</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="search-catalog container_catalog mobile">
+                <div class="gym_box">
+                        <div class="searchcatalog-header">
+                                <div class="name_box">
+                                    <span class="name">Название</span>
+                                    <div class="fitnesscenter-logo">
+                                        <img class="logotype" src="./img/fitness-center-logo.png">
+                                        <span class="name">GYM сеть фитнес-клубов</span>
+                                    </div>
+                                </div>
+            
+                                <div class="address_box">
+                                    <span class="address">Адрес</span>
+                                    <span class="location">
+                                        <img class="icon-location" src="img/icon-location.svg">
+                                        Железнодорожная,11
+                                    </span>
+                                </div>
+                                
+                            </div>
+                            <button class="show_more_gyms"></button>
+                            <div class="searchcatalog-durations">
+                                <span class="amount">Стоимость</span>
+                                <div class="onetime">
+                                    <span>Разовое<br>посещение</span>
+                                    <span class="dash -onetime">–</span>
+                                </div>
+                                <div class="onemonth">
+                                    <span>1 месяц</span>
+                                    <span class="price -onemonth">9700</span>
+                                </div>
+                                <div class="threemonths">
+                                    <span>3 месяца</span>
+                                    <span class="dash -threemonths">–</span>
+                                </div>
+                                <div class="sixmonths">
+                                    <span>6 месяцев</span>
+                                    <span class="price -sixmonths">17000</span>
+                                </div>
+                                <div class="twelvemonths">
+                                    <span>12 месяцев</span>
+                                    <span class="price -twelvemonths">22000</span>
+                                </div>
+            
+                                <a href="#popup_application" class="application_btn_block" rel="modal:open">
+                                    <button class="sendapplication button">
+                                        ОТПРАВИТЬ ЗАЯВКУ
+                                    </button>
+                                </a>
+                                <div class="underline"></div>
+                            </div>
+                            
+                </div>
+                <div class="gym_box">
+                    <div class="searchcatalog-header">
+                            <div class="name_box">
+                                <span class="name">Название</span>
+                                <div class="fitnesscenter-logo">
+                                    <img class="logotype" src="./img/fitness-center-logo.png">
+                                    <span class="name">GYM сеть фитнес-клубов</span>
+                                </div>
+                            </div>
+        
+                            <div class="address_box">
+                                <span class="address">Адрес</span>
+                                <span class="location">
+                                    <img class="icon-location" src="img/icon-location.svg">
+                                    Железнодорожная,11
+                                </span>
+                            </div>
+                            
+                    </div>
+
+                    <button class="show_more_gyms"></button>
+
+                    <div class="searchcatalog-durations">
+                        <span class="amount">Стоимость</span>
+                        <div class="onetime">
+                            <span>Разовое<br>посещение</span>
+                            <span class="dash -onetime">–</span>
+                        </div>
+                        <div class="onemonth">
+                            <span>1 месяц</span>
+                            <span class="price -onemonth">9700</span>
+                        </div>
+                        <div class="threemonths">
+                            <span>3 месяца</span>
+                            <span class="dash -threemonths">–</span>
+                        </div>
+                        <div class="sixmonths">
+                            <span>6 месяцев</span>
+                            <span class="price -sixmonths">17000</span>
+                        </div>
+                        <div class="twelvemonths">
+                            <span>12 месяцев</span>
+                            <span class="price -twelvemonths">22000</span>
+                        </div>
+    
+                        <a href="#popup_application" class="application_btn_block" rel="modal:open">
+                            <button class="sendapplication button">
+                                ОТПРАВИТЬ ЗАЯВКУ
+                            </button>
+                        </a>
+                        <div class="underline"></div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+        <div class="generalpage-promo">
+            <div class="promo-region">
+                <div class="promo-title"><span class="promotitle">АКЦИИ ФИТНЕС-КЛУБОВ ГОРОДА</span></div>
+                <div class="promo-slides">
+                    <div class="promoaction-section">
+                        <div class="promoaction-header">
+                            <img class="logotype" src="img/general-page-fitness-center-logo.png">
+                            <div class="promoaction-location"><img class="icon" src="img/icon-location.svg"><span
+                                    class="location">Железнодорожная,
+                                    17</span></div>
+                        </div>
+                        <div class="promoaction-content">
+                            <img class="preview" src="img/general-page-promo-preview.png">
+                            <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod
+                                tempor incididunt ut latetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                et
+                                dolore magna aliqua.</span>
+                            <button class="want button">ХОЧУ ПОЛУЧИТЬ</button>
+                        </div>
+                    </div>
+                    <div class="promoaction-section">
+                        <div class="promoaction-header">
+                            <img class="logotype" src="img/general-page-fitness-center-logo.png">
+                            <div class="promoaction-location"><img class="icon" src="img/icon-location.svg"><span
+                                    class="location">Железнодорожная,
+                                    17</span></div>
+                        </div>
+                        <div class="promoaction-content">
+                            <img class="preview" src="img/general-page-promo-preview.png">
+                            <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod
+                                tempor incididunt ut latetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                et
+                                dolore magna aliqua.</span>
+                            <button class="want button">ХОЧУ ПОЛУЧИТЬ</button>
+                        </div>
+                    </div>
+                    <div class="promoaction-section">
+                        <div class="promoaction-header">
+                            <img class="logotype" src="img/general-page-fitness-center-logo.png">
+                            <div class="promoaction-location"><img class="icon" src="img/icon-location.svg"><span
+                                    class="location">Железнодорожная,
+                                    17</span></div>
+                        </div>
+                        <div class="promoaction-content">
+                            <img class="preview" src="img/general-page-promo-preview.png">
+                            <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod
+                                tempor incididunt ut latetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                et
+                                dolore magna aliqua.</span>
+                            <button class="want button">ХОЧУ ПОЛУЧИТЬ</button>
+                        </div>
+                    </div>
+                                        <div class="promoaction-section">
+                        <div class="promoaction-header">
+                            <img class="logotype" src="img/general-page-fitness-center-logo.png">
+                            <div class="promoaction-location"><img class="icon" src="img/icon-location.svg"><span
+                                    class="location">Железнодорожная,
+                                    17</span></div>
+                        </div>
+                        <div class="promoaction-content">
+                            <img class="preview" src="img/general-page-promo-preview.png">
+                            <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod
+                                tempor incididunt ut latetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                et
+                                dolore magna aliqua.</span>
+                            <button class="want button">ХОЧУ ПОЛУЧИТЬ</button>
+                        </div>
+                    </div>
+                    <div class="promoaction-section">
+                        <div class="promoaction-header">
+                            <img class="logotype" src="img/general-page-fitness-center-logo.png">
+                            <div class="promoaction-location"><img class="icon" src="img/icon-location.svg"><span
+                                    class="location">Железнодорожная,
+                                    17</span></div>
+                        </div>
+                        <div class="promoaction-content">
+                            <img class="preview" src="img/general-page-promo-preview.png">
+                            <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod
+                                tempor incididunt ut latetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                et
+                                dolore magna aliqua.</span>
+                            <button class="want button">ХОЧУ ПОЛУЧИТЬ</button>
+                        </div>
+                    </div>
+                    <div class="promoaction-section">
+                        <div class="promoaction-header">
+                            <img class="logotype" src="img/general-page-fitness-center-logo.png">
+                            <div class="promoaction-location"><img class="icon" src="img/icon-location.svg"><span
+                                    class="location">Железнодорожная,
+                                    17</span></div>
+                        </div>
+                        <div class="promoaction-content">
+                            <img class="preview" src="img/general-page-promo-preview.png">
+                            <span class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod
+                                tempor incididunt ut latetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                et
+                                dolore magna aliqua.</span>
+                            <button class="want button">ХОЧУ ПОЛУЧИТЬ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="promo-buttons"></div>
+        </div>
+        <div class="generalpage-compare container">
+            <div class="compare-title">
+                <span class="comparetitle">Сравните все предложения фитнес-центров в несколько кликов</span>
+            </div>
+            <div class="compare-catalog">
+                <div class="compare-section">
+                    <span class="compare">On the other hand, we denounce with are so beguilby desire, that they cannot
+                        foresee the pain and trouble that are bound tмo ensue.</span>
+                </div>
+                <div class="compare-section">
+                    <span class="compare">On the other hand, we denounce with are so beguilby desire, that they cannot
+                        foresee the pain and trouble that are bound tмo ensue.</span>
+                </div>
+                <div class="compare-section">
+                    <span class="compare">On the other hand, we denounce with are so beguilby desire, that they cannot
+                        foresee the pain and trouble that are bound tмo ensue.</span>
+                </div>
+                <div class="compare-section">
+                    <span class="compare">On the other hand, we denounce with are so beguilby desire, that they cannot
+                        foresee the pain and trouble that are bound tмo ensue.</span>
+                </div>
+                <div class="compare-section">
+                    <span class="compare">On the other hand, we denounce with are so beguilby desire, that they cannot
+                        foresee the pain and trouble that are bound tмo ensue.</span>
+                </div>
+                <div class="compare-section">
+                    <span class="compare">On the other hand, we denounce with are so beguilby desire, that they cannot
+                        foresee the pain and trouble that are bound tмo ensue.</span>
+                </div>
+            </div>
+        </div>
+        <footer class="generalpage-footer">
+            <div class="footer-content">
+                <span class="footertitle">МАРКЕТ-ПЛЕЙС ФИТНЕС-ЦЕНТРОВ</span>
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <span class="columntitle">Категории</span>
+                        <div class="columncontent"><a href="#" class="footerlink">Фитнес центры с бассейном</a></div>
+                        <div class="columncontent"><a href="#" class="footerlink">Абонементы в фитнес-клубы</a></div>
+                    </div>
+                    <div class="footer-column">
+                        <span class="columntitle"><a href="#" class="footerlink">Сотрудничество</a></span>
+                        <div class="columncontent"><a href="#" class="footerlink">Фитнес-клубам</a></div>
+                    </div>
+                    <div class="footer-column">
+                        <span class="columntitle">Партнёры</span>
+                        <a href="#" class="footerlink"><img class="partner" src="img/partner-1.png"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Подключение JQuery -->
+    <script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
+
+    <!-- Подключение JQuery select menu -->
+    <script type="text/javascript" src="libs/jquery-select-menu/js/tail.select.min.js"></script>
+
+    <!-- Подключение JQuery carousel -->
+    <script type="text/javascript" src="libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+    <!-- Подключение JQuery masked input -->
+    <script type="text/javascript" src="libs/jquery-masked-input/jquery.maskedinput.min.js"></script>
+
+    <!-- Jquery modal window -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+    <!-- Подключение JavaSCript -->
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>

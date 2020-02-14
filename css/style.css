@@ -1,0 +1,2288 @@
+body {
+  background-color: #F6F6F4; }
+  body a.active.focus,
+  body a.active:focus,
+  body a.focus,
+  body a:active.focus,
+  body a:active:focus,
+  body a:focus,
+  body button.active.focus,
+  body button.active:focus,
+  body button.focus,
+  body button:active.focus,
+  body button:active:focus,
+  body button:focus,
+  body input:active,
+  body input:focus,
+  body textarea,
+  body textarea:focus,
+  body textarea:active {
+    outline: none !important; }
+  body button::-moz-focus-inner {
+    border: 0; }
+
+.personal-account {
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 20px; }
+  .personal-account .profiletitle-region,
+  .personal-account .profileselector-region,
+  .personal-account .profiledescription-region,
+  .personal-account .form-fields,
+  .personal-account .profileimages-region,
+  .personal-account .profilespecialoffers-region {
+    max-width: 910px;
+    width: 100%; }
+  .personal-account .profileimages-title,
+  .personal-account .formtitle {
+    font-weight: 900;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
+    margin-bottom: 20px; }
+  .personal-account .titlethin {
+    font-weight: normal;
+    text-transform: lowercase;
+    letter-spacing: 1.6px; }
+  .personal-account .saveandsend,
+  .personal-account .upload-logo,
+  .personal-account .upload-photo,
+  .personal-account .upload-offerimage {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 1.3px;
+    color: white;
+    background-color: #5E9EFF;
+    width: 195px;
+    height: 40px;
+    border-radius: 15px;
+    padding: 10px 35px;
+    margin: 20px auto 0 auto;
+    cursor: pointer; }
+  .personal-account .saveandsend {
+    margin: 20px auto 0 auto; }
+  .personal-account .saveandsend {
+    border: 0;
+    width: 460px;
+    height: 55px; }
+  .personal-account .filename {
+    font-size: 23px;
+    color: #5F5F5F; }
+  .personal-account .process {
+    width: 100%;
+    border: 1px solid #04CC00;
+    margin-top: 5px; }
+  .personal-account .process.-ninety {
+    width: 90%; }
+  .personal-account .process.-eighty {
+    width: 80%; }
+  .personal-account .process.-seventy {
+    width: 70%; }
+  .personal-account .process.-sixty {
+    width: 60%; }
+  .personal-account .process.-fifty {
+    width: 50%; }
+  .personal-account .process.-forty {
+    width: 40%; }
+  .personal-account .process.-thirty {
+    width: 30%; }
+  .personal-account .process.-twenty {
+    width: 20%; }
+  .personal-account .process.-ten {
+    width: 10%; }
+  .personal-account .process.-zero {
+    width: 0;
+    border: 0; }
+
+.profiletitle-region {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 auto 45px auto; }
+  .profiletitle-region .main-title {
+    font-weight: bold;
+    font-size: 35px;
+    letter-spacing: 1.7px;
+    text-align: center;
+    margin-top: 50px; }
+
+.profileselector-region {
+  text-align: center;
+  margin: 0 auto 30px auto; }
+  .profileselector-region .account,
+  .profileselector-region .application {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 20px;
+    background-color: #E3E3E1;
+    padding: 10px 20px;
+    letter-spacing: 0.6px; }
+  .profileselector-region .account {
+    border-radius: 5px 0px 0px 5px; }
+  .profileselector-region .application {
+    border-radius: 0px 5px 5px 0px; }
+  .profileselector-region .account.-active,
+  .profileselector-region .application.-active {
+    background: #69DB67; }
+  .profileselector-region .personalaccount,
+  .profileselector-region .personalapplication {
+    color: black;
+    opacity: 0.6; }
+  .profileselector-region .personalaccount.-active,
+  .profileselector-region .personalapplication.-active {
+    font-weight: bold;
+    color: white;
+    opacity: 1; }
+
+.profiledescription-region {
+  margin: 0 auto 45px auto; }
+  .profiledescription-region .profiledescription-title,
+  .profiledescription-region .profiledescription-description {
+    margin: 0 auto; }
+  .profiledescription-region .profiledescription-title {
+    margin-bottom: 20px; }
+  .profiledescription-region .descriptiontitle {
+    font-weight: 900;
+    font-size: 21px;
+    text-transform: uppercase;
+    letter-spacing: 1.1px; }
+  .profiledescription-region .descriptiondescription {
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 1.3px;
+    line-height: 1.2;
+    color: #555555; }
+  @media (max-width: 910px) {
+    .profiledescription-region {
+      text-align: center; } }
+
+.profileimages-region {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 auto 65px auto; }
+  .profileimages-region input[type=file] {
+    width: 0;
+    height: 0;
+    opacity: 0; }
+
+.profilelogo-region {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  max-width: 197px;
+  min-height: 106px; }
+
+.profilephotos-region {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  max-width: 287px;
+  min-height: 106px; }
+  .profilephotos-region .photo-section {
+    margin-bottom: 5px; }
+
+.profile-form .form-fields,
+.specialoffers-form .form-fields,
+.generalpage-search .form-fields {
+  margin: 0 auto; }
+
+.profile-form .form-section,
+.specialoffers-form .form-section,
+.generalpage-search .form-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 30px; }
+
+.profile-form .form-section.-short,
+.specialoffers-form .form-section.-short,
+.generalpage-search .form-section.-short {
+  max-width: 380px;
+  width: 100%; }
+
+.profile-form .form-section.-upload,
+.specialoffers-form .form-section.-upload,
+.generalpage-search .form-section.-upload {
+  min-height: 106px; }
+
+.profile-form .formtitle,
+.specialoffers-form .formtitle,
+.generalpage-search .formtitle {
+  letter-spacing: 1.6px;
+  margin-bottom: 10px;
+  margin-left: 20px; }
+
+.profile-form .forminput,
+.profile-form .formtextarea,
+.profile-form .ticketinput,
+.specialoffers-form .forminput,
+.specialoffers-form .formtextarea,
+.specialoffers-form .ticketinput,
+.generalpage-search .forminput,
+.generalpage-search .formtextarea,
+.generalpage-search .ticketinput {
+  font-weight: 300;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  letter-spacing: 1.6px;
+  border: 0;
+  border-radius: 15px;
+  resize: vertical;
+  padding: 15px; }
+
+.profile-form .formtextarea,
+.specialoffers-form .formtextarea,
+.generalpage-search .formtextarea {
+  min-height: 100px; }
+
+.profile-form .ticketinput,
+.specialoffers-form .ticketinput,
+.generalpage-search .ticketinput {
+  width: 105px;
+  height: 46px; }
+
+.profile-form .two-fields,
+.specialoffers-form .two-fields,
+.generalpage-search .two-fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.profile-form .profile-services,
+.specialoffers-form .profile-services,
+.generalpage-search .profile-services {
+  margin-bottom: 20px; }
+
+.profile-form .profileservice,
+.specialoffers-form .profileservice,
+.generalpage-search .profileservice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  width: 110px;
+  height: 110px;
+  margin-bottom: 10px;
+  cursor: pointer; }
+
+.profile-form .servicedescription,
+.specialoffers-form .servicedescription,
+.generalpage-search .servicedescription {
+  font-size: 14px;
+  padding-top: 20px; }
+
+.profile-form .servicedescription.-selected,
+.specialoffers-form .servicedescription.-selected,
+.generalpage-search .servicedescription.-selected {
+  color: #C91212; }
+
+.profile-form .service-icon,
+.specialoffers-form .service-icon,
+.generalpage-search .service-icon {
+  height: 60px; }
+
+.profile-form input[type=checkbox],
+.specialoffers-form input[type=checkbox],
+.generalpage-search input[type=checkbox] {
+  position: absolute;
+  opacity: 0; }
+
+.profile-services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-width: 910px;
+  margin: 0 auto; }
+  .profile-services .formtitle {
+    margin: 0 0 20px 0; }
+
+.form-services,
+.generalpage-search {
+  max-width: 1450px;
+  margin: 0 auto; }
+  .form-services .formtitle,
+  .form-services .searchtitle,
+  .generalpage-search .formtitle,
+  .generalpage-search .searchtitle {
+    max-width: 910px;
+    width: 100%;
+    margin: 0 auto 20px auto; }
+
+.form-fields .form-section.-address {
+  max-width: 430px; }
+
+.form-fields .formtitle {
+  margin: 0 0 20px 0; }
+
+.form-fields .formcomment {
+  font-size: 15px;
+  letter-spacing: 0.2px;
+  color: #D80101;
+  margin-top: -15px;
+  margin-bottom: 25px;
+  margin-left: 20px; }
+
+@media (max-width: 650px) {
+  .form-fields {
+    text-align: center; } }
+
+.ticket-region {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 630px; }
+  .ticket-region .ticketprice {
+    font-size: 20px;
+    margin-bottom: 10px; }
+  .ticket-region .tickettitle {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 15px;
+    height: 30px;
+    color: #555555;
+    margin-bottom: 10px; }
+
+.ticket-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 110px;
+  text-align: center; }
+
+.profilespecialoffers-region {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 auto; }
+  .profilespecialoffers-region .specialofferstitle {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #DC2020;
+    margin-bottom: 20px; }
+  .profilespecialoffers-region .specialoffersdescription {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 35px; }
+  .profilespecialoffers-region input[type=file] {
+    width: 0;
+    height: 0;
+    opacity: 0; }
+
+.specialoffers-form .form-section.-short {
+  text-align: center;
+  max-width: 235px; }
+
+.specialoffers-form .formtitle {
+  margin: 0 0 10px 0; }
+
+.specialoffers-form .mainadd-button {
+  max-width: 136px;
+  height: 25px;
+  margin: 25px auto 0 auto;
+  cursor: pointer; }
+
+.specialoffers-form .addbutton {
+  width: 100%; }
+
+.specialoffers-form input[type=submit] {
+  opacity: 0; }
+
+.howtobuycheaper-region {
+  font-family: 'Roboto', sans-serif;
+  max-width: 910px;
+  padding-bottom: 20px;
+  margin: 0 auto; }
+  .howtobuycheaper-region .howtobuycheaper-maintitle {
+    margin-bottom: 40px; }
+  .howtobuycheaper-region .howtobuycheaper-maindescription {
+    margin-bottom: 30px; }
+  .howtobuycheaper-region .howtobuycheaper-mainimage {
+    margin-bottom: 30px; }
+
+.howtobuycheaper-maintitle {
+  font-weight: bold;
+  font-size: 35px;
+  letter-spacing: 1.7px;
+  text-align: center;
+  margin-top: 50px; }
+
+.howtobuycheaper-maindescription,
+.howtobuycheaper-description {
+  font-size: 15px;
+  letter-spacing: 0.6px;
+  max-width: 850px;
+  margin: 0 auto; }
+
+.howtobuycheaper-description {
+  margin-bottom: 30px; }
+
+.howtobuycheaper-mainimage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .howtobuycheaper-mainimage .howtobuycheaperimage {
+    width: 92%; }
+
+.howtobuycheaper-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .howtobuycheaper-images .howtobuycheaperimage.-small {
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    width: 375px;
+    height: 210px;
+    margin-right: 10px; }
+
+.profileapplications-region {
+  max-width: 910px;
+  margin: 0 auto; }
+
+.profileapplications-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  font-weight: bold;
+  max-width: 100%;
+  margin-right: 60px;
+  margin-bottom: 5px;
+  margin-left: 20px; }
+  .profileapplications-header .date {
+    width: 100%;
+    max-width: 95px;
+    margin-right: 10px; }
+  .profileapplications-header .name {
+    width: 100%;
+    max-width: 135px;
+    margin-right: 10px; }
+  .profileapplications-header .number {
+    width: 100%;
+    max-width: 190px;
+    margin-right: 10px; }
+  .profileapplications-header .mail {
+    width: 100%;
+    max-width: 140px;
+    margin-right: 10px; }
+  .profileapplications-header .ticket {
+    margin-left: auto; }
+
+.profile-application {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0.6px;
+  color: #555555;
+  background-color: white;
+  border-radius: 15px;
+  padding: 7px 20px;
+  margin-bottom: 5px; }
+  .profile-application .date,
+  .profile-application .name,
+  .profile-application .number,
+  .profile-application .mail {
+    word-break: break-all; }
+  .profile-application .date {
+    width: 100%;
+    max-width: 90px;
+    margin-right: 10px; }
+  .profile-application .name {
+    width: 100%;
+    max-width: 105px;
+    margin-right: 10px; }
+  .profile-application .number {
+    width: 100%;
+    max-width: 180px;
+    margin-right: 10px; }
+  .profile-application .mail {
+    width: 100%;
+    max-width: 180px;
+    margin-right: 10px; }
+  .profile-application .ticket {
+    width: 100%;
+    max-width: 110px;
+    margin-right: 10px; }
+  .profile-application .button {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 1.3px;
+    color: white;
+    background-color: #5E9EFF;
+    border: 0;
+    border-radius: 15px;
+    padding: 10px 35px;
+    margin-top: auto;
+    cursor: pointer; }
+  .profile-application .accepted {
+    padding: 10px 15px;
+    background: white;
+    color: #5E9EFF;
+    cursor: default; }
+
+.promoactions-region {
+  font-family: 'Roboto', sans-serif; }
+  .promoactions-region .promoactions-maintitle {
+    margin-bottom: 50px; }
+  .promoactions-region .promoactions-catalog {
+    max-width: 1140px;
+    margin: 0 auto; }
+  .promoactions-region .promoactions-description {
+    margin-top: 25px;
+    margin-bottom: 80px; }
+
+.promoactions-maintitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: url(../img/lowerprice-page-background.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 545px;
+  color: white; }
+  .promoactions-maintitle .maintitle,
+  .promoactions-maintitle .maindescription {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto 10px auto; }
+  .promoactions-maintitle .maintitle {
+    padding: 0 20px;
+    font-size: 49px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    margin-top: auto;
+    margin-bottom: 15px; }
+  .promoactions-maintitle .maindescription {
+    padding: 0 20px;
+    font-weight: 700;
+    font-size: 21px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px; }
+  @media (max-width: 600px) {
+    .promoactions-maintitle {
+      text-align: center; } }
+
+.promoactions-catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  @media (max-width: 680px) {
+    .promoactions-catalog {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
+
+.promoaction-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: white;
+  width: auto;
+  height: 100%;
+  min-height: 275px;
+  padding: 5px;
+  margin: 0 5px 25px 5px; }
+  .promoaction-section.lowerprice {
+    width: 30%; }
+    .promoaction-section.lowerprice .promoaction-content .preview {
+      width: 100%; }
+  .promoaction-section .promoaction-header {
+    margin-bottom: 10px; }
+
+.promoaction-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .promoaction-header .promoaction-location {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 10px;
+    margin-right: 15px; }
+  .promoaction-header .location {
+    text-align: center;
+    width: auto; }
+  .promoaction-header .icon {
+    margin-right: 10px; }
+
+.promoaction-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 230px; }
+  .promoaction-content .preview {
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    width: auto;
+    height: 130px;
+    margin: 0 auto 10px auto; }
+  .promoaction-content .description {
+    font-size: 10px;
+    width: 100%;
+    margin: 0 auto 10px auto; }
+  .promoaction-content button {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-weight: bold;
+    background: none;
+    border: 3px solid #000000;
+    border-radius: 20px;
+    width: 100%;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: auto;
+    margin-bottom: 10px;
+    cursor: pointer; }
+
+.promoactions-description {
+  max-width: 1330px;
+  margin: 0 auto; }
+
+@-webkit-keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  1% {
+    display: -webkit-box;
+    display: flex;
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  100% {
+    display: -webkit-box;
+    display: flex;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  1% {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  100% {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@-webkit-keyframes fadeInFrom {
+  100% {
+    display: -webkit-box;
+    display: flex;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  0% {
+    display: none;
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0); } }
+
+@keyframes fadeInFrom {
+  100% {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  0% {
+    display: none;
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0); } }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.popup-location {
+  height: 210px;
+  padding: 10px 50px; }
+  .popup-location a {
+    text-decoration: none; }
+  .popup-location .locationtitle {
+    display: block;
+    text-align: center;
+    font-size: 21px;
+    letter-spacing: 0.5px;
+    margin-top: 30px;
+    margin-bottom: 25px; }
+  .popup-location .tail-select {
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 30px; }
+  .popup-location .submit {
+    display: block;
+    font-size: 21px;
+    font-weight: 600;
+    width: 215px;
+    height: 45px;
+    color: white;
+    background-color: #5E9EFF;
+    border: 0;
+    border-radius: 15px;
+    margin: 0 auto;
+    cursor: pointer; }
+
+.popup-sendapplication,
+.popup-location,
+.popup-signin {
+  position: absolute;
+  z-index: 1;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #E8E8E8;
+  border-radius: 20px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+  .popup-sendapplication input,
+  .popup-location input,
+  .popup-signin input {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    max-width: 355px;
+    width: 100%;
+    height: 35px;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 10px 10px 20px;
+    margin: 0 auto 15px auto; }
+  .popup-sendapplication .applicationtitle,
+  .popup-location .applicationtitle,
+  .popup-signin .applicationtitle {
+    display: block;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px; }
+
+.popup-sendapplication {
+  max-width: 430px;
+  width: 100%;
+  min-height: 280px;
+  padding: 10px; }
+  .popup-sendapplication .submit {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    width: 150px;
+    height: 35px;
+    color: white;
+    background-color: #5E9EFF;
+    border: 0;
+    border-radius: 15px;
+    margin: 0 auto;
+    cursor: pointer; }
+
+.popup-thankyou {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  display: none;
+  max-width: 550px;
+  width: 100%;
+  height: 150px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #E8E8E8;
+  border-radius: 20px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+  .popup-thankyou .title {
+    display: block;
+    letter-spacing: 0.2px;
+    margin-top: 30px;
+    margin-bottom: 25px; }
+  .popup-thankyou.-active {
+    display: block; }
+
+.popup-signin {
+  display: none;
+  max-width: 470px;
+  width: 100%;
+  height: 325px; }
+  .popup-signin input {
+    max-width: 370px;
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+    margin: 0 auto 25px auto; }
+  .popup-signin .input.-password {
+    margin: 0 auto 15px auto; }
+  .popup-signin .signintitle {
+    display: block;
+    text-align: center;
+    font-size: 19px;
+    letter-spacing: 0.5px;
+    margin-top: 35px;
+    margin-bottom: 30px; }
+  .popup-signin .signincomment {
+    display: block;
+    font-size: 10px;
+    max-width: 290px;
+    width: 100%;
+    color: #D20000;
+    margin: 0 auto 15px auto; }
+  .popup-signin .submit {
+    display: block;
+    font-size: 19px;
+    font-weight: 600;
+    width: 195px;
+    height: 40px;
+    color: white;
+    background-color: #5E9EFF;
+    border: 0;
+    border-radius: 15px;
+    margin: 0 auto;
+    cursor: pointer; }
+
+.generalpage-region {
+  font-family: 'Roboto', sans-serif; }
+  .generalpage-region .generalpage-preview {
+    margin-bottom: 25px; }
+  .generalpage-region .searchcatalog-header {
+    margin: 0px auto 25px auto; }
+  .generalpage-region .gym_box .searchcatalog-header {
+    margin: 0px auto 10px auto; }
+  .generalpage-region .searchcatalog-durations {
+    margin: 0 auto 10px auto; }
+  .generalpage-region .fitnesscenter-section {
+    margin: 0 auto 10px auto; }
+
+.generalpage-preview {
+  height: 550px;
+  background: url(../img/general-page-background.png) no-repeat;
+  background-size: cover;
+  color: white;
+  padding-top: 35px; }
+  .generalpage-preview .maintitle,
+  .generalpage-preview .maindescription {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto; }
+  .generalpage-preview .maintitle {
+    font-size: 49px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    margin-top: 220px;
+    margin-bottom: 30px; }
+  .generalpage-preview .maindescription {
+    font-size: 21px;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+
+.generalpage-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 21px;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto; }
+  .generalpage-information a {
+    text-decoration: none;
+    color: white; }
+  .generalpage-information .icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 10px; }
+
+.information-section a {
+  text-decoration: none;
+  color: white; }
+
+.information-section.-dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  cursor: pointer; }
+
+.service-icon.-selected {
+  -webkit-filter: drop-shadow(0px 0px 11px rgba(255, 0, 0, 0.7));
+  filter: drop-shadow(0px 0px 11px rgba(255, 0, 0, 0.7)); }
+
+.generalpage-maintitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.generalpage-search {
+  text-align: center;
+  max-width: 1040px; }
+  .generalpage-search .profile-services {
+    margin-top: 20px; }
+    .generalpage-search .profile-services .service-icon.-selected {
+      -webkit-filter: drop-shadow(0px 0px 11px rgba(255, 0, 0, 0.7));
+      filter: drop-shadow(0px 0px 11px rgba(255, 0, 0, 0.7)); }
+  .generalpage-search .searchtitle {
+    font-size: 23px; }
+  .generalpage-search .searchmap {
+    max-width: 1040px;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 30px; }
+  .generalpage-search .search {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 22px;
+    background: none;
+    border: 3px solid #000000;
+    border-radius: 15px;
+    width: 190px;
+    height: 42px;
+    margin: 0 auto;
+    margin-top: auto;
+    margin-bottom: 20px;
+    cursor: pointer; }
+  .generalpage-search .search-catalog {
+    margin-bottom: 30px; }
+
+.search-catalog {
+  background-color: white;
+  padding: 15px 0; }
+  .search-catalog .gym_box {
+    margin: 20px 0; }
+    .search-catalog .gym_box .show_more_gyms {
+      width: 57px;
+      height: 11px;
+      background: 0;
+      border: none;
+      padding: 0;
+      margin: 10px auto;
+      background: url("../img/arrow.svg");
+      background-position: center;
+      background-size: auto;
+      background-repeat: no-repeat;
+      -webkit-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out; }
+      .search-catalog .gym_box .show_more_gyms.active {
+        background: url("../img/arrow_up.svg");
+        background-position: center;
+        background-size: auto;
+        background-repeat: no-repeat; }
+    .search-catalog .gym_box .searchcatalog-header {
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+    .search-catalog .gym_box .application_btn_block {
+      width: 100%;
+      margin: 20px auto;
+      text-align: center; }
+    .search-catalog .gym_box .sendapplication {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      font-weight: bold;
+      font-size: 11px;
+      background: none;
+      border: 3px solid #000000;
+      border-radius: 20px;
+      width: 130px;
+      height: 35px;
+      cursor: pointer; }
+    .search-catalog .gym_box .name_box {
+      width: 50%;
+      text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .search-catalog .gym_box .name_box .name {
+        max-width: 100%;
+        margin-bottom: 15px; }
+      .search-catalog .gym_box .name_box .fitnesscenter-logo {
+        text-align: left;
+        margin: 0 auto; }
+    .search-catalog .gym_box .address_box {
+      width: 50%;
+      text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .search-catalog .gym_box .address_box .address {
+        max-width: 100%;
+        margin-bottom: 15px; }
+      .search-catalog .gym_box .address_box .location {
+        font-size: 16px; }
+    .search-catalog .gym_box .searchcatalog-durations {
+      display: none;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding-right: 0;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+      align-items: baseline;
+      height: 0;
+      -webkit-animation: fadeInFromNone 0.5s ease-out;
+      animation: fadeInFromNone 0.5s ease-out;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both; }
+      .search-catalog .gym_box .searchcatalog-durations.active {
+        height: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+      .search-catalog .gym_box .searchcatalog-durations .amount {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 15px;
+        font-size: 24px;
+        font-weight: 700; }
+      .search-catalog .gym_box .searchcatalog-durations .onetime {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        height: 60px; }
+        .search-catalog .gym_box .searchcatalog-durations .onetime .dash.-onetime {
+          font-size: 16px;
+          font-weight: 700; }
+      .search-catalog .gym_box .searchcatalog-durations .onemonth {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        height: 60px; }
+        .search-catalog .gym_box .searchcatalog-durations .onemonth .price.-onemonth {
+          font-size: 16px;
+          font-weight: 700; }
+      .search-catalog .gym_box .searchcatalog-durations .threemonths {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        height: 60px; }
+        .search-catalog .gym_box .searchcatalog-durations .threemonths .dash.-threemonths {
+          font-size: 16px;
+          font-weight: 700; }
+      .search-catalog .gym_box .searchcatalog-durations .sixmonths {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        height: 60px; }
+        .search-catalog .gym_box .searchcatalog-durations .sixmonths .price.-sixmonths {
+          font-size: 16px;
+          font-weight: 700; }
+      .search-catalog .gym_box .searchcatalog-durations .twelvemonths {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        height: 60px; }
+        .search-catalog .gym_box .searchcatalog-durations .twelvemonths .price.-twelvemonths {
+          font-size: 16px;
+          font-weight: 700; }
+
+.search-catalog.mobile {
+  display: none; }
+
+.searchcatalog-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: left;
+  max-width: 990px; }
+  .searchcatalog-header .name {
+    max-width: 185px;
+    width: 100%;
+    margin-right: 10px; }
+  .searchcatalog-header .address {
+    max-width: 210px;
+    width: 100%;
+    margin-right: 10px; }
+
+.searchcatalog-durations {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  font-weight: 500;
+  font-size: 13px;
+  text-align: right;
+  max-width: 1000px;
+  padding-right: 155px; }
+  .searchcatalog-durations .onetime {
+    text-align: center; }
+  .searchcatalog-durations .onemonth,
+  .searchcatalog-durations .threemonths,
+  .searchcatalog-durations .sixmonths,
+  .searchcatalog-durations .twelvemonths {
+    width: 100%;
+    max-width: 80px;
+    margin-right: 10px; }
+
+.fitnesscenter-section {
+  max-width: 1000px; }
+  .fitnesscenter-section .underline {
+    width: 100%;
+    max-width: 845px;
+    border: 0.5px solid #666F66;
+    margin-bottom: 5px; }
+
+.fitnesscenter-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .fitnesscenter-content .icon-location {
+    width: 18px;
+    margin-right: 5px; }
+  .fitnesscenter-content .location {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    max-width: 250px;
+    margin-right: 10px; }
+  .fitnesscenter-content .dash,
+  .fitnesscenter-content .price {
+    font-size: 21px;
+    font-weight: 500; }
+  .fitnesscenter-content .dash.-onetime {
+    width: 100%;
+    max-width: 60px;
+    margin-right: 10px; }
+  .fitnesscenter-content .price.-onemonth {
+    width: 100%;
+    max-width: 90px;
+    margin-right: 10px; }
+  .fitnesscenter-content .dash.-threemonths {
+    width: 100%;
+    max-width: 55px;
+    margin-right: 10px; }
+  .fitnesscenter-content .price.-sixmonths {
+    width: 100%;
+    max-width: 80px;
+    margin-right: 10px; }
+  .fitnesscenter-content .price.-twelvemonths {
+    width: 100%;
+    max-width: 80px;
+    margin-right: 10px; }
+  .fitnesscenter-content .sendapplication {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 11px;
+    background: none;
+    border: 3px solid #000000;
+    border-radius: 20px;
+    width: 130px;
+    height: 35px;
+    cursor: pointer; }
+
+.fitnesscenter-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  max-width: 180px;
+  margin-right: 10px; }
+  .fitnesscenter-logo .logotype {
+    width: 65px;
+    margin-bottom: 7px; }
+  .fitnesscenter-logo .name {
+    font-size: 12px;
+    font-weight: bold; }
+
+.generalpage-promo {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: url(../img/general-page-background-second.png) center no-repeat;
+  height: 515px;
+  padding: 10px 0; }
+
+.promo-region {
+  overflow: hidden;
+  background: white;
+  height: 500px;
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px; }
+  .promo-region .promoaction-section {
+    width: auto; }
+
+.promo-title {
+  font-size: 43px;
+  text-align: center;
+  padding: 20px; }
+
+.promo-slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden; }
+  .promo-slides .owl-stage {
+    overflow: hidden;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important; }
+  .promo-slides .logotype {
+    width: 90px; }
+  .promo-slides .preview {
+    width: 100%;
+    height: 195px;
+    -o-object-position: center;
+    object-position: center;
+    -o-object-fit: cover;
+    object-fit: cover; }
+  .promo-slides .promoaction-header {
+    margin-bottom: 20px; }
+  .promo-slides .location {
+    font-size: 13px;
+    max-width: 180px; }
+  .promo-slides .promoaction-content {
+    height: 320px; }
+  .promo-slides .want {
+    min-height: 40px;
+    border-radius: 15px; }
+
+.promo-buttons {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 1210px;
+  width: 100%; }
+  .promo-buttons button {
+    width: 65px;
+    height: 65px;
+    border: 0;
+    cursor: pointer; }
+  .promo-buttons .prev {
+    background: url(../img/promo-arrow-prev.svg) no-repeat;
+    background-size: contain; }
+  .promo-buttons .next {
+    background: url(../img/promo-arrow-next.svg) no-repeat;
+    background-size: contain; }
+
+.generalpage-compare {
+  min-height: 365px;
+  padding-top: 35px; }
+  .generalpage-compare .compare-title {
+    margin-bottom: 45px; }
+
+.compare-title {
+  text-align: center;
+  padding-top: 10px; }
+  .compare-title .comparetitle {
+    font-size: 23px;
+    letter-spacing: 1.7px; }
+
+.compare-catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 870px;
+  margin: 0 auto; }
+  .compare-catalog .compare-section {
+    margin-bottom: 40px; }
+  @media (max-width: 720px) {
+    .compare-catalog {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
+
+.compare-section {
+  max-width: 360px;
+  width: 100%; }
+  .compare-section .compare {
+    letter-spacing: 1px; }
+
+.generalpage-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url(../img/general-page-background-third.png) top no-repeat;
+  height: 370px; }
+
+.footer-content {
+  background-color: white;
+  min-height: 250px;
+  max-width: 1028px;
+  width: 100%;
+  padding-top: 20px;
+  margin: auto; }
+  .footer-content .footertitle {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 1.2px;
+    margin-bottom: 40px; }
+
+.footer-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 860px;
+  margin: 0 auto; }
+  @media (max-width: 683px) {
+    .footer-columns {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
+
+.footer-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 60px; }
+  .footer-column a {
+    text-decoration: none;
+    color: black; }
+  .footer-column .columntitle {
+    font-size: 23px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    margin-bottom: 45px; }
+  .footer-column .columncontent {
+    font-size: 18px;
+    margin-bottom: 10px; }
+
+.fitnessclub-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  margin: 0 auto; }
+  .fitnessclub-page .fitnessclub-preview {
+    margin-bottom: 60px; }
+  .fitnessclub-page .fitnessclub-tariff {
+    margin-bottom: 60px; }
+  .fitnessclub-page .fitnessclub-feedback {
+    margin-bottom: 65px; }
+  .fitnessclub-page .fitnessclub-sameclubs {
+    margin-bottom: 65px; }
+
+.fitnessclub-preview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 550px;
+  background: url(../img/fitnes-club-preview-page-background.png) top no-repeat; }
+  .fitnessclub-preview .preview-header {
+    margin: 0 auto; }
+  .fitnessclub-preview .profile-services {
+    max-width: 100%;
+    min-height: 100px; }
+
+.preview-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.preview-logotype {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 20px; }
+  .preview-logotype .previewpreview {
+    font-weight: 500;
+    font-size: 26px;
+    margin-bottom: 10px; }
+  .preview-logotype .logotype {
+    width: 230px; }
+
+.preview-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .preview-text .name {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: -5px; }
+  .preview-text .location {
+    margin-top: 7px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 26px; }
+  .preview-text .previewlocation {
+    width: 26px; }
+
+.preview-categories {
+  margin-top: auto;
+  margin-bottom: 25px; }
+  .preview-categories .profileservice {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: 500;
+    max-width: 100px;
+    width: 100%;
+    height: 130px; }
+  .preview-categories .service-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px; }
+    .preview-categories .service-icon.-selected {
+      -webkit-filter: drop-shadow(0px 0px 11px rgba(255, 0, 0, 0.7));
+      filter: drop-shadow(0px 0px 11px rgba(255, 0, 0, 0.7)); }
+  .preview-categories .servicedescription {
+    font-size: 12px;
+    text-align: center; }
+
+.fitnessclub-carousel {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  position: relative;
+  max-width: 1480px;
+  width: 100%;
+  margin: 0 auto 40px auto; }
+
+.fitnessclub-slides {
+  max-width: 90%;
+  overflow: hidden;
+  margin: 0 auto; }
+  .fitnessclub-slides.container {
+    width: 90%; }
+  .fitnessclub-slides .owl-stage {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important; }
+  .fitnessclub-slides .photo {
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    width: 100%;
+    height: 280px; }
+  .fitnessclub-slides .owl-stage-outer {
+    overflow: hidden; }
+
+.fitnessclub-buttons {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 1480px;
+  width: 100%;
+  margin: 0 auto;
+  top: 35%; }
+  .fitnessclub-buttons .prev,
+  .fitnessclub-buttons .next {
+    border: 0;
+    background: none;
+    cursor: pointer; }
+
+.fitnessclub-tariff {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .fitnessclub-tariff a {
+    text-align: center; }
+  .fitnessclub-tariff .tarifftitle {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px; }
+  .fitnessclub-tariff .tariffs-region {
+    margin-bottom: 30px; }
+  .fitnessclub-tariff .tariff-section {
+    margin: 0 2px; }
+  .fitnessclub-tariff .sendapplication {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 15px;
+    height: 40px;
+    width: 300px;
+    background: none;
+    border: 3px solid black;
+    border-radius: 15px;
+    margin: 0 auto;
+    cursor: pointer; }
+
+.tariffs-region {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.tariff-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 175px;
+  width: 100%; }
+  .tariff-section .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 19px;
+    text-align: center;
+    height: 60px;
+    background-color: #69DB67;
+    border-radius: 15px 15px 0px 0px;
+    margin-bottom: 4px; }
+  .tariff-section .price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 20px;
+    height: 60px;
+    border-radius: 0px 0px 10px 10px;
+    background: white;
+    margin-bottom: 4px;
+    cursor: pointer; }
+  .tariff-section .price.-middle {
+    border-radius: 0; }
+  .tariff-section .price.-dash {
+    font-size: 50px;
+    cursor: default; }
+  .tariff-section .price.-selected {
+    background-color: #D2FFD1;
+    -webkit-box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25); }
+
+.fitnessclub-feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .fitnessclub-feedback .feedbacktitle {
+    font-weight: 600;
+    font-size: 26px;
+    margin: 0 auto 25px auto; }
+  .fitnessclub-feedback .comment {
+    font-style: italic;
+    font-size: 15px;
+    text-align: center;
+    max-width: 880px;
+    margin: 0 auto 20px auto; }
+
+.leavecomment-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 10px; }
+  .leavecomment-form .formtitle {
+    font-size: 23px;
+    text-align: center;
+    margin-bottom: 10px; }
+  .leavecomment-form .textarea {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 890px;
+    width: 100%;
+    min-height: 95px;
+    resize: vertical;
+    border: 0;
+    background: white;
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin: 0 auto 20px auto; }
+  .leavecomment-form .submit {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 15px;
+    height: 40px;
+    width: 165px;
+    background: none;
+    border: 3px solid black;
+    border-radius: 15px;
+    margin: 0 auto;
+    cursor: pointer; }
+
+.fitnessclub-sameclubs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .fitnessclub-sameclubs .sameclubstitle {
+    font-weight: 600;
+    font-size: 26px;
+    margin: 0 auto 25px auto; }
+
+.sameclubs-catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  @media (max-width: 760px) {
+    .sameclubs-catalog {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
+
+.sameclub-region {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 435px;
+  height: 260px;
+  background: white;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 0px 10px; }
+  .sameclub-region .sameclubamount {
+    margin-left: 15px; }
+  .sameclub-region .tariffs-region {
+    margin-top: 10px; }
+  .sameclub-region .tariff-section {
+    max-width: 80px;
+    margin: 0px 1px; }
+  .sameclub-region .title {
+    font-size: 11px;
+    height: 40px; }
+  .sameclub-region .amount {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 18px;
+    height: 45px;
+    border-radius: 0px 0px 10px 10px;
+    background: #EBEDFD;
+    margin-bottom: 2px; }
+  .sameclub-region .amount.-middle {
+    border-radius: 0; }
+  .sameclub-region .amount.-dash {
+    font-size: 50px; }
+
+.sameclub-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 25px; }
+  .sameclub-header .sameclublogo {
+    width: 110px;
+    margin-left: 5px; }
+  .sameclub-header .sameclubname {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-right: 20px; }
+  .sameclub-header .sameclublocation {
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+    margin-top: 10px; }
+  .sameclub-header .icon-location {
+    width: 14px;
+    margin-right: 5px; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.container {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px; }
+
+.container_catalog {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px; }
+
+.owl-dots {
+  position: absolute;
+  bottom: 10px;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  transform: translateX(50%); }
+
+.owl-dots .owl-dot {
+  border: 1px solid #000000;
+  background: #ffffff;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  margin: 0 5px; }
+
+.owl-dots .owl-dot.active {
+  background: #000000; }
+
+@media (max-width: 1200px) {
+  .promo-buttons {
+    display: none; }
+  .fitnessclub-buttons {
+    display: none; }
+  .fitnessclub-slides.container {
+    width: 100%; }
+  .fitnessclub-carousel {
+    padding-bottom: 40px;
+    margin: 0 auto 20px auto; } }
+
+@media (max-width: 986px) {
+  .container {
+    padding: 0 10px; }
+  .container_catalog {
+    padding: 0 10px; }
+  .generalpage-search .search-catalog {
+    overflow: auto; }
+  .promo-region {
+    height: auto;
+    position: relative; }
+  .generalpage-promo {
+    height: auto; }
+  .promoaction-header .promoaction-location {
+    margin-left: 5px;
+    min-width: 175px; }
+  .promoaction-header .icon {
+    margin-right: 5px; }
+  .compare-section {
+    width: 45%;
+    margin-right: 10px; }
+  .footer-content {
+    width: 90%; }
+  .footer-column {
+    margin-bottom: 30px;
+    width: 100%; }
+  .footer-column .columntitle {
+    margin-bottom: 10px; }
+  .generalpage-footer {
+    height: auto;
+    background: url(../img/general-page-background-third.png) center no-repeat;
+    background-size: cover;
+    padding: 30px 0; }
+  .search-catalog {
+    display: none; }
+  .search-catalog.mobile {
+    display: block; }
+  .profiletitle-region .main-title {
+    margin-top: 35px; }
+  .profileselector-region .account, .profileselector-region .application {
+    font-size: 18px; }
+  .profileapplications-region {
+    overflow: auto; }
+    .profileapplications-region .profile-application {
+      width: 900px; }
+    .profileapplications-region .profileapplications-header {
+      width: 825px;
+      max-width: initial; } }
+
+@media (max-width: 767px) {
+  .profile-form .profileservice, .specialoffers-form .profileservice, .generalpage-search .profileservice {
+    width: 30%; }
+  .generalpage-information {
+    font-size: 16px; }
+  .generalpage-preview .maintitle {
+    font-size: 36px;
+    margin-top: 120px; }
+  .promo-region {
+    width: 90%; }
+  .container_catalog {
+    width: 93%; }
+  .sameclub-region {
+    width: 100%;
+    margin-bottom: 20px; }
+  .preview-logotype .previewpreview {
+    font-size: 18px; }
+  .preview-logotype .logotype {
+    width: 140px; }
+  .preview-text .name {
+    font-size: 28px; }
+  .preview-text .location {
+    font-size: 20px; }
+  .popup-sendapplication {
+    max-width: 90%; }
+  .profileselector-region .account, .profileselector-region .application {
+    font-size: 14px; }
+  .profiletitle-region .main-title {
+    font-size: 26px; }
+  .profileimages-region {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .profilelogo-region {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 30px; }
+    .profilelogo-region .logo-section {
+      width: 280px;
+      text-align: left;
+      margin: 0 auto; }
+  .profilephotos-region .photo-section {
+    margin-bottom: 20px;
+    text-align: left; }
+  .profilephotos-region {
+    margin: 0 auto; }
+  .personal-account .saveandsend, .personal-account .upload-logo, .personal-account .upload-photo, .personal-account .upload-offerimage {
+    width: 280px;
+    height: 53px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 25px;
+    border-radius: 20px; }
+  .profile-form .form-section.-short {
+    max-width: 100%; }
+  .two-fields {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 20px; }
+  .form-fields .form-section.-address {
+    max-width: 100%; }
+  .form-services .formtitle {
+    text-align: center; }
+  .ticket-region {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .ticket-section {
+    max-width: 30%;
+    width: 30%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 20px; }
+  .ticket-region .ticketprice {
+    width: 30%;
+    font-size: 30px;
+    margin-bottom: 30px; }
+  .specialoffer-artwork {
+    margin: 20px auto;
+    width: 280px;
+    text-align: left; }
+  .specialoffers-form .form-section.-short {
+    max-width: 100%; }
+    .specialoffers-form .form-section.-short .upload-offerimage {
+      margin-bottom: 20px; }
+  .personal-account .saveandsend {
+    width: 100%;
+    height: 78px;
+    margin-bottom: 30px;
+    font-size: 20px; }
+  .promoaction-section.lowerprice {
+    width: 48%; }
+    .promoaction-section.lowerprice .promoaction-content .description {
+      font-size: 14px; }
+    .promoaction-section.lowerprice .promoaction-header .promoaction-location {
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; }
+  .howtobuycheaper-images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .howtobuycheaper-images .howtobuycheaperimage.-small {
+      width: 100%;
+      margin-bottom: 15px; }
+  .howtobuycheaper-maintitle {
+    font-size: 26px; }
+  .promoactions-maintitle .maintitle {
+    font-size: 40px;
+    text-align: initial; }
+  .promoactions-maintitle .maindescription {
+    font-size: 18px; } }
+
+@media (max-width: 576px) {
+  .promoactions-maintitle .maintitle {
+    font-size: 34px; }
+  .promoactions-maintitle .maindescription {
+    font-size: 16px; }
+  .promoaction-section.lowerprice {
+    width: 85%; }
+  .search-catalog .gym_box .name_box {
+    width: 35%; }
+  .search-catalog .gym_box .address_box {
+    width: 60%; }
+  .generalpage-information {
+    font-size: 12px; }
+  .generalpage-information .icon {
+    width: 8px; }
+  .generalpage-preview {
+    height: 350px;
+    background-position: center; }
+  .generalpage-preview .maintitle {
+    font-size: 24px; }
+  .search-catalog .gym_box .searchcatalog-durations {
+    font-size: 10px; }
+    .search-catalog .gym_box .searchcatalog-durations .onetime {
+      width: 20%; }
+    .search-catalog .gym_box .searchcatalog-durations .onemonth {
+      width: 20%;
+      margin-right: 0; }
+    .search-catalog .gym_box .searchcatalog-durations .threemonths {
+      width: 20%;
+      margin-right: 0; }
+    .search-catalog .gym_box .searchcatalog-durations .sixmonths {
+      width: 20%;
+      margin-right: 0; }
+    .search-catalog .gym_box .searchcatalog-durations .twelvemonths {
+      width: 20%;
+      margin-right: 0; }
+  .promo-title {
+    font-size: 24px;
+    font-weight: 700; }
+  .generalpage-promo {
+    background-size: cover;
+    padding: 20px 0; }
+  .promo-region {
+    padding-bottom: 30px; }
+  .promo-slides .preview {
+    height: 350px; }
+  .preview-logotype .previewpreview {
+    font-size: 12px; }
+  .preview-logotype .logotype {
+    width: 80px; }
+  .preview-text {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: end; }
+  .preview-text .name {
+    font-size: 17px; }
+  .preview-text .location {
+    font-size: 16px; }
+  .preview-text .previewlocation {
+    width: 14px; }
+  .fitnessclub-preview .profile-services {
+    margin-top: 7%; }
+  .preview-categories .profileservice {
+    max-width: 100%;
+    width: 24%; }
+  .fitnessclub-slides .photo {
+    height: 170px; }
+  .tariff-section .title {
+    font-size: 12px; }
+  .profileselector-region .account, .profileselector-region .application {
+    font-size: 10px;
+    padding: 10px; }
+  .sameclub-header .sameclublogo {
+    width: 75px; } }

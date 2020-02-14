@@ -1,0 +1,875 @@
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    1% {
+        display: flex;
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        display: flex;
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInFrom {
+
+    100% {
+        display: flex;
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    0% {
+        display: none;
+        opacity: 0;
+        transform: scale(0);
+    }
+
+
+
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.popup-location {
+    height: 210px;
+    padding: 10px 50px;
+
+    a {
+        text-decoration: none;
+    }
+
+    .locationtitle {
+        display: block;
+        text-align: center;
+        font-size: 21px;
+        letter-spacing: 0.5px;
+        margin-top: 30px;
+        margin-bottom: 25px;
+    }
+
+    .tail-select {
+        max-width: 400px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .submit {
+        display: block;
+        font-size: 21px;
+        font-weight: 600;
+        width: 215px;
+        height: 45px;
+        color: white;
+        background-color: #5E9EFF;
+        border: 0;
+        border-radius: 15px;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+}
+
+.popup-sendapplication,
+.popup-location,
+.popup-signin {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    flex-direction: column;
+    box-sizing: border-box;
+    background: #E8E8E8;
+    border-radius: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    input {
+        box-sizing: border-box;
+        display: block;
+        max-width: 355px;
+        width: 100%;
+        height: 35px;
+        border: 0;
+        border-radius: 10px;
+        padding: 10px 10px 10px 20px;
+        margin: 0 auto 15px auto;
+    }
+
+    .applicationtitle {
+        display: block;
+        font-size: 15px;
+        letter-spacing: 0.2px;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+.popup-sendapplication {
+    max-width: 430px;
+    width: 100%;
+    min-height: 280px;
+    padding: 10px;
+
+    .submit {
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        width: 150px;
+        height: 35px;
+        color: white;
+        background-color: #5E9EFF;
+        border: 0;
+        border-radius: 15px;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+}
+
+.popup-thankyou {
+    box-sizing: border-box;
+    position: absolute;
+    display: none;
+    max-width: 550px;
+    width: 100%;
+    height: 150px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #E8E8E8;
+    border-radius: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    .title {
+        display: block;
+        letter-spacing: 0.2px;
+        margin-top: 30px;
+        margin-bottom: 25px;
+    }
+
+    &.-active {
+        display: block;
+    }
+}
+
+.popup-signin {
+    display: none;
+    max-width: 470px;
+    width: 100%;
+    height: 325px;
+
+    input {
+        max-width: 370px;
+        width: 100%;
+        height: 45px;
+        border-radius: 20px;
+        margin: 0 auto 25px auto;
+    }
+
+    .input.-password {
+        margin: 0 auto 15px auto;
+    }
+
+    .signintitle {
+        display: block;
+        text-align: center;
+        font-size: 19px;
+        letter-spacing: 0.5px;
+        margin-top: 35px;
+        margin-bottom: 30px;
+    }
+
+    .signincomment {
+        display: block;
+        font-size: 10px;
+        max-width: 290px;
+        width: 100%;
+        color: #D20000;
+        margin: 0 auto 15px auto;
+    }
+
+    .submit {
+        display: block;
+        font-size: 19px;
+        font-weight: 600;
+        width: 195px;
+        height: 40px;
+        color: white;
+        background-color: #5E9EFF;
+        border: 0;
+        border-radius: 15px;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+}
+
+.generalpage-region {
+    font-family: 'Roboto', sans-serif;
+
+    .generalpage-preview {
+        margin-bottom: 25px;
+    }
+
+    .searchcatalog-header {
+        margin: 0px auto 25px auto;
+    }
+
+    & .gym_box {
+        .searchcatalog-header {
+            margin: 0px auto 10px auto;
+        }
+    }
+
+    .searchcatalog-durations {
+        margin: 0 auto 10px auto
+    }
+
+    .fitnesscenter-section {
+        margin: 0 auto 10px auto;
+    }
+}
+
+.generalpage-preview {
+    height: 550px;
+    background: url(../img/general-page-background.png) no-repeat;
+    background-size: cover;
+    color: white;
+    padding-top: 35px;
+
+    .maintitle,
+    .maindescription {
+        max-width: 1140px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .maintitle {
+        font-size: 49px;
+        font-weight: bold;
+        letter-spacing: 2.5px;
+        margin-top: 220px;
+        margin-bottom: 30px;
+    }
+
+    .maindescription {
+        font-size: 21px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+}
+
+.generalpage-information {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 21px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .icon {
+        width: 16px;
+        height: 16px;
+        margin-left: 10px;
+    }
+}
+
+.information-section {
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.information-section.-dropdown {
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.service-icon {
+    &.-selected {
+        filter: drop-shadow( 0px 0px 11px rgba(255, 0, 0, 0.7));
+    }
+}
+
+.generalpage-maintitle {
+    display: flex;
+    flex-direction: column;
+}
+
+.generalpage-search {
+    text-align: center;
+    max-width: 1040px;
+
+    .profile-services {
+        margin-top: 20px;
+        .service-icon {
+            &.-selected {
+                filter: drop-shadow( 0px 0px 11px rgba(255, 0, 0, 0.7));
+            }
+        }
+    }
+
+    .searchtitle {
+        font-size: 23px;
+    }
+
+    .searchmap {
+        max-width: 1040px;
+        width: 100%;
+        height: 300px;
+        margin-bottom: 30px;
+    }
+
+    .search {
+        box-sizing: border-box;
+        font-weight: bold;
+        font-size: 22px;
+        background: none;
+        border: 3px solid #000000;
+        border-radius: 15px;
+        width: 190px;
+        height: 42px;
+        margin: 0 auto;
+        margin-top: auto;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+
+    .search-catalog {
+        margin-bottom: 30px;
+    }
+}
+
+.search-catalog {
+    background-color: white;
+    padding: 15px 0;
+
+    .gym_box {
+        margin: 20px 0;
+
+        .show_more_gyms {
+            width: 57px;
+            height: 11px;
+            background: 0;
+            border: none;
+            padding: 0;
+            margin: 10px auto;
+            background: url('../img/arrow.svg');
+            background-position: center;
+            background-size: auto;
+            background-repeat: no-repeat;
+            transition: all .3s ease-in-out;
+            &.active {
+                background: url('../img/arrow_up.svg');
+                background-position: center;
+                background-size: auto;
+                background-repeat: no-repeat;
+            }
+        }
+
+        .searchcatalog-header {
+            justify-content: space-around;
+        }
+
+        .application_btn_block {
+            width: 100%;
+            margin: 20px auto;
+            text-align: center;
+        }
+        
+        .sendapplication {
+            box-sizing: border-box;
+            font-weight: bold;
+            font-size: 11px;
+            background: none;
+            border: 3px solid #000000;
+            border-radius: 20px;
+            width: 130px;
+            height: 35px;
+            cursor: pointer;
+        }
+
+        .name_box {
+            width: 50%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            & .name {
+                max-width: 100%;
+                margin-bottom: 15px;
+            }
+
+            & .fitnesscenter-logo {
+                text-align: left;
+                margin: 0 auto;
+            }
+        }
+    
+        .address_box {
+            width: 50%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            & .address {
+                max-width: 100%;
+                margin-bottom: 15px;
+            }
+    
+            & .location {
+                font-size: 16px;
+            }
+        }
+    
+        .searchcatalog-durations {
+            display: none;
+            flex-wrap: wrap;
+            padding-right: 0;
+            justify-content: center;
+            align-items: baseline;
+            height: 0;
+            animation: fadeInFromNone 0.5s ease-out;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+            &.active {
+                height: auto;
+                display: flex;
+            }
+            & .amount {
+                display: block;
+                text-align: center;
+                width: 100%;
+                margin-bottom: 15px;
+                font-size: 24px;
+                font-weight: 700;
+            }
+
+            & .onetime {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 60px;
+                & .dash.-onetime {
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+            }
+
+            & .onemonth {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                height: 60px;
+                & .price.-onemonth {
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+            }
+
+            & .threemonths {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                height: 60px;
+                & .dash.-threemonths {
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+            }
+
+            & .sixmonths {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                height: 60px;
+                & .price.-sixmonths {
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+            }
+
+            & .twelvemonths {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                height: 60px;
+                & .price.-twelvemonths {
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+.search-catalog.mobile {
+    display: none;
+}
+
+.searchcatalog-header {
+    display: flex;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: left;
+    max-width: 990px;
+
+    .name {
+        max-width: 185px;
+        width: 100%;
+        margin-right: 10px;
+    }
+
+    .address {
+        max-width: 210px;
+        width: 100%;
+        margin-right: 10px;
+    }
+}
+
+.searchcatalog-durations {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-weight: 500;
+    font-size: 13px;
+    text-align: right;
+    max-width: 1000px;
+    padding-right: 155px;
+
+    .onetime {
+        text-align: center;
+    }
+
+    .onemonth,
+    .threemonths,
+    .sixmonths,
+    .twelvemonths {
+        width: 100%;
+        max-width: 80px;
+        margin-right: 10px;
+    }
+}
+
+.fitnesscenter-section {
+    max-width: 1000px;
+
+    .underline {
+        width: 100%;
+        max-width: 845px;
+        border: 0.5px solid #666F66;
+        margin-bottom: 5px;
+    }
+}
+
+.fitnesscenter-content {
+    display: flex;
+    text-align: left;
+    align-items: center;
+
+    .icon-location {
+        width: 18px;
+        margin-right: 5px;
+    }
+
+    .location {
+        display: flex;
+        font-size: 16px;
+        font-weight: 500;
+        width: 100%;
+        max-width: 250px;
+        margin-right: 10px;
+    }
+
+    .dash,
+    .price {
+        font-size: 21px;
+        font-weight: 500;
+    }
+
+    .dash.-onetime {
+        width: 100%;
+        max-width: 60px;
+        margin-right: 10px;
+    }
+
+    .price.-onemonth {
+        width: 100%;
+        max-width: 90px;
+        margin-right: 10px;
+    }
+
+    .dash.-threemonths {
+        width: 100%;
+        max-width: 55px;
+        margin-right: 10px;
+    }
+
+    .price.-sixmonths {
+        width: 100%;
+        max-width: 80px;
+        margin-right: 10px;
+    }
+
+    .price.-twelvemonths {
+        width: 100%;
+        max-width: 80px;
+        margin-right: 10px;
+    }
+
+    .sendapplication {
+        box-sizing: border-box;
+        font-weight: bold;
+        font-size: 11px;
+        background: none;
+        border: 3px solid #000000;
+        border-radius: 20px;
+        width: 130px;
+        height: 35px;
+        cursor: pointer;
+    }
+}
+
+.fitnesscenter-logo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 180px;
+    margin-right: 10px;
+
+    .logotype {
+        width: 65px;
+        margin-bottom: 7px;
+    }
+
+    .name {
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
+
+.generalpage-promo {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/general-page-background-second.png) center no-repeat;
+    height: 515px;
+    padding: 10px 0;
+}
+
+.promo-region {
+    overflow: hidden;
+    background: white;
+    height: 500px;
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+
+
+    .promoaction-section {
+        width: auto;
+    }
+}
+
+.promo-title {
+    font-size: 43px;
+    text-align: center;
+    padding: 20px;
+}
+
+.promo-slides {
+    display: flex;
+    overflow: hidden;
+
+    .owl-stage {
+        overflow: hidden;
+        display: flex !important;
+    }
+
+    .logotype {
+        width: 90px;
+    }
+
+    .preview {
+        width: 100%;
+        height: 195px;
+        object-position: center;
+        object-fit: cover;
+    }
+
+    .promoaction-header {
+        margin-bottom: 20px;
+    }
+
+    .location {
+        font-size: 13px;
+        max-width: 180px;
+    }
+
+    .promoaction-content {
+        height: 320px;
+    }
+
+    .want {
+        min-height: 40px;
+        border-radius: 15px;
+    }
+}
+
+.promo-buttons {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1210px;
+    width: 100%;
+
+    button {
+        width: 65px;
+        height: 65px;
+        border: 0;
+        cursor: pointer;
+    }
+
+    .prev {
+        background: url(../img/promo-arrow-prev.svg) no-repeat;
+        background-size: contain;
+    }
+
+    .next {
+        background: url(../img/promo-arrow-next.svg) no-repeat;
+        background-size: contain;
+    }
+}
+
+.generalpage-compare {
+    min-height: 365px;
+    padding-top: 35px;
+
+    .compare-title {
+        margin-bottom: 45px;
+    }
+}
+
+.compare-title {
+    text-align: center;
+    padding-top: 10px;
+
+    .comparetitle {
+        font-size: 23px;
+        letter-spacing: 1.7px;
+    }
+}
+
+.compare-catalog {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 870px;
+    margin: 0 auto;
+
+    .compare-section {
+        margin-bottom: 40px;
+    }
+
+    @media(max-width: 720px) {
+        justify-content: center;
+    }
+}
+
+.compare-section {
+    max-width: 360px;
+    width: 100%;
+
+    .compare {
+        letter-spacing: 1px;
+    }
+}
+
+.generalpage-footer {
+    display: flex;
+    background: url(../img/general-page-background-third.png) top no-repeat;
+    height: 370px;
+}
+
+.footer-content {
+    background-color: white;
+    min-height: 250px;
+    max-width: 1028px;
+    width: 100%;
+    padding-top: 20px;
+    margin: auto;
+
+    .footertitle {
+        display: block;
+        text-align: center;
+        font-weight: 600;
+        font-size: 24px;
+        letter-spacing: 1.2px;
+        margin-bottom: 40px;
+    }
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 860px;
+    margin: 0 auto;
+
+    @media(max-width: 683px) {
+        justify-content: center;
+    }
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 60px;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .columntitle {
+        font-size: 23px;
+        font-weight: 400;
+        letter-spacing: 0.6px;
+        margin-bottom: 45px;
+    }
+
+    .columncontent {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+}

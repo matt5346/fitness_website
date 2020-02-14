@@ -1,0 +1,406 @@
+.fitnessclub-page {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    margin: 0 auto;
+
+    .fitnessclub-preview {
+        margin-bottom: 60px;
+    }
+
+    .fitnessclub-tariff {
+        margin-bottom: 60px;
+    }
+
+    .fitnessclub-feedback {
+        margin-bottom: 65px;
+    }
+
+    .fitnessclub-sameclubs {
+        margin-bottom: 65px;
+    }
+}
+
+.fitnessclub-preview {
+    display: flex;
+    flex-direction: column;
+    min-height: 550px;
+    background: url(../img/fitnes-club-preview-page-background.png) top no-repeat;
+    // background-size: contain;
+
+    .preview-header {
+        margin: 0 auto;
+    }
+
+    .profile-services {
+        max-width: 100%;
+        min-height: 100px;
+    }
+}
+
+.preview-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.preview-logotype {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+    .previewpreview {
+        font-weight: 500;
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+    .logotype {
+        width: 230px;
+    }
+}
+
+.preview-text {
+    display: flex;
+    flex-direction: column;
+
+    .name {
+        font-size: 38px;
+        font-weight: bold;
+        margin-bottom: -5px;
+    }
+
+    .location {
+        margin-top: 7px;
+        display: flex;
+        font-size: 26px;
+    }
+
+    .previewlocation {
+        width: 26px;
+    }
+}
+
+.preview-categories {
+    margin-top: auto;
+    margin-bottom: 25px;
+
+    .profileservice {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        max-width: 100px;
+        width: 100%;
+        height: 130px;
+    }
+
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+        &.-selected {
+            filter: drop-shadow( 0px 0px 11px rgba(255, 0, 0, 0.7));
+        }
+    }
+
+    .servicedescription {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+.fitnessclub-carousel {
+    touch-action: manipulation;
+    position: relative;
+    max-width: 1480px;
+    width: 100%;
+    margin: 0 auto 40px auto;
+}
+
+.fitnessclub-slides {
+    max-width: 90%;
+    overflow: hidden;
+    margin: 0 auto;
+
+    &.container {
+        width: 90%;
+    }
+
+    .owl-stage {
+        display: flex !important;
+    }
+
+    .photo {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 280px;
+    }
+
+    .owl-stage-outer {
+        overflow: hidden;
+    }
+}
+
+.fitnessclub-buttons {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1480px;
+    width: 100%;
+    margin: 0 auto;
+    top: 35%;
+
+    .prev,
+    .next {
+        border: 0;
+        background: none;
+        cursor: pointer;
+    }
+}
+
+.fitnessclub-tariff {
+    display: flex;
+    flex-direction: column;
+
+    a {
+        text-align: center;
+    }
+
+    .tarifftitle {
+        font-size: 26px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .tariffs-region {
+        margin-bottom: 30px;
+    }
+
+    .tariff-section {
+        margin: 0 2px;
+    }
+
+    .sendapplication {
+        box-sizing: border-box;
+        font-size: 15px;
+        height: 40px;
+        width: 300px;
+        background: none;
+        border: 3px solid black;
+        border-radius: 15px;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+}
+
+.tariffs-region {
+    display: flex;
+    justify-content: center;
+}
+
+.tariff-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 175px;
+    width: 100%;
+
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 19px;
+        text-align: center;
+        height: 60px;
+        background-color: #69DB67;
+        border-radius: 15px 15px 0px 0px;
+        margin-bottom: 4px;
+    }
+
+    .price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+        font-size: 20px;
+        height: 60px;
+        border-radius: 0px 0px 10px 10px;
+        background: white;
+        margin-bottom: 4px;
+        cursor: pointer;
+    }
+
+    .price.-middle {
+        border-radius: 0;
+    }
+
+    .price.-dash {
+        font-size: 50px;
+        cursor: default;
+    }
+
+    .price.-selected {
+        background-color: #D2FFD1;
+        box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.fitnessclub-feedback {
+    display: flex;
+    flex-direction: column;
+
+    .feedbacktitle {
+        font-weight: 600;
+        font-size: 26px;
+        margin: 0 auto 25px auto;
+    }
+
+    .comment {
+        font-style: italic;
+        font-size: 15px;
+        text-align: center;
+        max-width: 880px;
+        margin: 0 auto 20px auto;
+    }
+}
+
+.leavecomment-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+    .formtitle {
+        font-size: 23px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .textarea {
+        box-sizing: border-box;
+        max-width: 890px;
+        width: 100%;
+        min-height: 95px;
+        resize: vertical;
+        border: 0;
+        background: white;
+        border-radius: 15px;
+        padding: 15px 20px;
+        margin: 0 auto 20px auto;
+    }
+
+    .submit {
+        box-sizing: border-box;
+        font-size: 15px;
+        height: 40px;
+        width: 165px;
+        background: none;
+        border: 3px solid black;
+        border-radius: 15px;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+}
+
+.fitnessclub-sameclubs {
+    display: flex;
+    flex-direction: column;
+
+    .sameclubstitle {
+        font-weight: 600;
+        font-size: 26px;
+        margin: 0 auto 25px auto;
+    }
+}
+
+.sameclubs-catalog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media(max-width: 760px) {
+        flex-wrap: wrap;
+    }
+}
+
+.sameclub-region {
+    box-sizing: border-box;
+    width: 435px;
+    height: 260px;
+    background: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0px 10px;
+
+    .sameclubamount {
+        margin-left: 15px;
+    }
+
+    .tariffs-region {
+        margin-top: 10px;
+    }
+
+    .tariff-section {
+        max-width: 80px;
+        margin: 0px 1px;
+    }
+
+    .title {
+        font-size: 11px;
+        height: 40px;
+    }
+
+    .amount {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+        font-size: 18px;
+        height: 45px;
+        border-radius: 0px 0px 10px 10px;
+        background: #EBEDFD;
+        margin-bottom: 2px;
+    }
+
+    .amount.-middle {
+        border-radius: 0;
+    }
+
+    .amount.-dash {
+        font-size: 50px;
+    }
+}
+
+.sameclub-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+
+    .sameclublogo {
+        width: 110px;
+        margin-left: 5px;
+    }
+
+    .sameclubname {
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 5px;
+        margin-right: 20px;
+    }
+
+    .sameclublocation {
+        display: block;
+        font-weight: normal;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .icon-location {
+        width: 14px;
+        margin-right: 5px;
+    }
+}

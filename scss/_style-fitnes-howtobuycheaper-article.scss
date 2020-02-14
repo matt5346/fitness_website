@@ -1,0 +1,60 @@
+.howtobuycheaper-region {
+    font-family: 'Roboto', sans-serif;
+    max-width: 910px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+
+    .howtobuycheaper-maintitle {
+        margin-bottom: 40px;
+    }
+
+    .howtobuycheaper-maindescription {
+        margin-bottom: 30px;
+    }
+
+    .howtobuycheaper-mainimage {
+        margin-bottom: 30px;
+    }
+}
+
+.howtobuycheaper-maintitle {
+    font-weight: bold;
+    font-size: 35px;
+    letter-spacing: 1.7px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.howtobuycheaper-maindescription,
+.howtobuycheaper-description {
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.howtobuycheaper-description {
+    margin-bottom: 30px;
+}
+
+.howtobuycheaper-mainimage {
+    display: flex;
+    justify-content: center;
+
+    .howtobuycheaperimage {
+        width: 92%;
+    }
+}
+
+.howtobuycheaper-images {
+    display: flex;
+    justify-content: center;
+
+    .howtobuycheaperimage.-small {
+        object-fit: cover;
+        object-position: center;
+        width: 375px;
+        height: 210px;
+        margin-right: 10px;
+    }
+}

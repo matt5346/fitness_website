@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=580, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Личный кабинет</title>
+
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="personal-account container">
+        <div class="profiletitle-region">
+            <span class="main-title">ЛИЧНЫЙ КАБИНЕТ ФИТНЕС-КЛУБА</span>
+        </div>
+        <div class="profileselector-region">
+            <a href="#" class="account -active">
+                <span class="personalaccount -active">ЛИЧНЫЙ КАБИНЕТ</span>
+            </a>
+            <a href="#" class="application">
+                <span class="personalapplication">ЗАЯВКИ НА КЛУБНЫЕ КАРТЫ</span>
+            </a>
+        </div>
+        <div class="profiledescription-region">
+            <div class="profiledescription-title">
+                <span class="descriptiontitle">Внесите данные о своем клубе и они автоматически появятся на сайте</span>
+            </div>
+            <div class="profiledescription-description">
+                <span class="descriptiondescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in volunim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex
+                    ea commodo consequat. Duis aute irure dolor in reprehendptate velit esse cillueu...</span>
+            </div>
+        </div>
+        <div class="profileimages-region">
+            <div class="profilelogo-region">
+                <span class="profileimages-title">ЛОГОТИП</span>
+                <div class="logo-section">
+                    <span class="filename">Логотип.png</span>
+                    <div class="process"></div>
+                </div>
+                <label class="upload-logo">
+                    <input type="file" class="uploadlogo" accept="image/jpg, image/png"><span
+                        class="uploadtext">ПРИКРЕПИТЬ</span>
+                </label>
+            </div>
+            <div class="profilephotos-region">
+                <span class="profileimages-title">ФОТОГРАФИИ <span class="titlethin"><br>(не более 5)</span></span>
+                <div class="photo-section">
+                    <span class="filename">Изображение.jpg</span>
+                    <div class="process -seventy"></div>
+                </div>
+                <div class="photo-section">
+                    <span class="filename">Изображение.jpg</span>
+                    <div class="process -twenty"></div>
+                </div>
+                <div class="photo-section">
+                    <span class="filename">Изображение.jpg</span>
+                    <div class="process -zero"></div>
+                </div>
+                <label class="upload-photo">
+                    <input type="file" class="uploadphoto" accept="image/jpg, image/png">ПРИКРЕПИТЬ
+                </label>
+            </div>
+        </div>
+        <div class="profileform-region">
+            <form action="" class="profile-form">
+                <div class="form-fields">
+                    <div class="form-section -short">
+                        <span class="formtitle">E-MAIL ДЛЯ ОТПРАВКИ ЗАЯВОК</span>
+                        <input type="text" class="forminput" placeholder="ivanov@gmail.com">
+                    </div>
+                    <div class="form-section -long">
+                        <span class="formtitle">ОПИСАНИЕ <span class="titlethin"> (не менее 200 символов)</span></span>
+                        <textarea class="formtextarea"
+                            placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magn..."></textarea>
+                    </div>
+                    <div class="two-fields">
+                        <div class="form-section -short">
+                            <span class="formtitle">ГОРОД</span>
+                            <input type="text" class="forminput" placeholder="Москва">
+                        </div>
+                        <div class="form-section -short -address">
+                            <span class="formtitle">АДРЕС</span>
+                            <input type="text" class="forminput" placeholder="Железнодорожная, 17">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-section form-services -long">
+                    <span class="formtitle">ОТМЕТЬТЕ КАКИЕ УСЛУГИ У ВАС ЕСТЬ</span>
+                    <div class="profile-services">
+                        <label class="profileservice -gym">
+                            <input type="checkbox" class="checkbox">
+                            <img class="service-icon -gym" src="img/1.svg">
+                            <span class="servicedescription -gym">Тренажерные<br>залы и кардио</span>
+                        </label>
+                        <label class="profileservice -yoga">
+                            <input type="checkbox" class="checkbox">
+                            <img class="service-icon -yoga" src="img/2.svg">
+                            <span class="servicedescription -yoga">Йога и<br>медитация</span>
+                        </label>
+                        <label class="profileservice -dancing">
+                            <input type="checkbox" class="checkbox">
+                            <img class="service-icon -dancing" src="img/3.svg">
+                            <span class="servicedescription -dancing">Танцевальные направления</span>
+                        </label>
+                        <label class="profileservice -group">
+                            <input type="checkbox" class="checkbox">
+                            <img class="service-icon -group" src="img/4.svg">
+                            <span class="servicedescription -group">Групповые занятия</span>
+                        </label>
+                        <label class="profileservice -pools">
+                            <input type="checkbox" class="checkbox">
+                            <img class="service-icon -pools" src="img/5.svg">
+                            <span class="servicedescription -pools">Бассейны и аквааэробика</span>
+                        </label>
+                        <label class="profileservice -bike">
+                            <input type="checkbox" class="checkbox">
+                            <img class="service-icon -bike" src="img/6.svg">
+                            <span class="servicedescription -bike">ESM и Wellnes тренировки</span>
+                        </label>
+                        <label class="profileservice -fight">
+                            <input type="checkbox" class="checkbox">
+                            <img class="service-icon -fight" src="img/7.svg">
+                            <span class="servicedescription -fight">Единоборства и самооборона</span>
+                        </label>
+                        <label class="profileservice -gymnastics">
+                            <input type="checkbox" class="checkbox">
+                            <img class="service-icon -gymnastics" src="img/8.svg">
+                            <span class="servicedescription -gymnastics">Акробатика и гимнастика</span>
+                        </label>
+                        <label class="profileservice -relax">
+                            <input type="checkbox" class="checkbox">
+                            <img class="service-icon -relax" src="img/9.svg">
+                            <span class="servicedescription -relax">SPA процедуры и relax</span>
+                        </label>
+                        <label class="profileservice -team">
+                            <input type="checkbox" class="checkbox">
+                            <img class="service-icon -team" src="img/10.svg">
+                            <span class="servicedescription -team">Командные виды спорта</span>
+                        </label>
+                        <label class="profileservice -various">
+                            <input type="checkbox" class="checkbox">
+                            <img class="service-icon -various" src="img/11.svg">
+                            <span class="servicedescription -various">Разные тренировки</span>
+                        </label>
+                        <label class="profileservice -bath">
+                            <input type="checkbox" class="checkbox">
+                            <img class="service-icon -bath" src="img/12.svg">
+                            <span class="servicedescription -bath">Баня</span>
+                        </label>
+                        <label class="profileservice -childcard">
+                            <input type="checkbox" class="checkbox">
+                            <img class="service-icon -childcard" src="img/13.svg">
+                            <span class="servicedescription -childcard">Детская карта</span>
+                        </label>
+                    </div>
+                    <div class="form-fields">
+                        <div class="form-section">
+                            <span class="formtitle">ВВЕДИТЕ СТОИМОСТЬ АБОНЕМЕНТА</span>
+                            <span class="formcomment">* Если у вас какого-то нет, не заполняйте это поле</span>
+                            <div class="ticket-region">
+                                <div class="ticket-section">
+                                    <span class="tickettitle">Разовое посещение</span>
+                                    <input type="number" class="ticketinput">
+                                </div>
+                                <div class="ticket-section">
+                                    <span class="tickettitle">1 месяц</span>
+                                    <input type="number" class="ticketinput">
+                                </div>
+                                <div class="ticket-section">
+                                    <span class="tickettitle">3 месяца</span>
+                                    <input type="number" class="ticketinput">
+                                </div>
+                                <div class="ticket-section">
+                                    <span class="tickettitle">6 месяцев</span>
+                                    <input type="number" class="ticketinput">
+                                </div>
+                                <div class="ticket-section">
+                                    <span class="tickettitle">12 месяцев</span>
+                                    <input type="number" class="ticketinput">
+                                </div>
+                                <span class="ticketprice">руб.</span>
+                            </div>
+                        </div>
+                    </div>
+            </form>
+        </div>
+        <div class="profilespecialoffers-region">
+            <span class="specialofferstitle">ПРЕДЛОЖИТЕ ПОСЕТИТЕЛЯМ СПЕЦИАЛЬНЫЕ АКЦИИ</span>
+            <span class="specialoffersdescription">Вы получите гораздо больший охват и большее количество клиентов.<br>
+                Акции публикуются на главной странице. Это бесплатно.</span>
+            <div class="specialoffersform-region">
+                <form action="" class="specialoffers-form">
+                    <div class="form-section -short -upload">
+                        <span class="formtitle">ФОТО ДЛЯ ОБЛОЖКИ</span>
+                        <div class="specialoffer-artwork">
+                            <span class="filename">Обложка.jpg</span>
+                            <div class="process"></div>
+                        </div>
+                        <label class="upload-offerimage">
+                            <input type="file" class="uploadspecialofferimage" accept="image/jpg, image/png"><span
+                                class="uploadtext">ПРИКРЕПИТЬ</span>
+                        </label>
+                    </div>
+                    <div class="form-section -long">
+                        <span class="formtitle">ОПИСАНИЕ АКЦИИ <span class="titlethin"> (не менее 200
+                                символов)</span></span>
+                        <textarea class="formtextarea"
+                            placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magn..."
+                            required></textarea>
+                        <label class="mainadd-button">
+                            <img class="addbutton" src="img/main-add-button.svg">
+                            <input type="submit" class="formsubmit" name="adddescription" value="ДОБАВИТЬ">
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <button class="saveandsend">СОХРАНИТЬ И ОТПРАВИТЬ НА АГРЕГАТОР</button>
+    </div>
+
+    <!-- Подключение JQuery -->
+    <script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
+
+    <!-- Подключение JavaSCript -->
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>

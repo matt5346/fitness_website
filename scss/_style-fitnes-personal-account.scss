@@ -1,0 +1,481 @@
+body {
+    background-color: #F6F6F4;
+
+    a.active.focus,
+    a.active:focus,
+    a.focus,
+    a:active.focus,
+    a:active:focus,
+    a:focus,
+    button.active.focus,
+    button.active:focus,
+    button.focus,
+    button:active.focus,
+    button:active:focus,
+    button:focus,
+    input:active,
+    input:focus,
+    textarea,
+    textarea:focus,
+    textarea:active {
+        outline: none !important;
+    }
+
+    button::-moz-focus-inner {
+        border: 0;
+    }
+}
+
+.personal-account {
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 20px;
+
+    .profiletitle-region,
+    .profileselector-region,
+    .profiledescription-region,
+    .form-fields,
+    .profileimages-region,
+    .profilespecialoffers-region {
+        max-width: 910px;
+        width: 100%;
+    }
+
+    .profileimages-title,
+    .formtitle {
+        font-weight: 900;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1.7px;
+        margin-bottom: 20px;
+    }
+
+    .titlethin {
+        font-weight: normal;
+        text-transform: lowercase;
+        letter-spacing: 1.6px;
+    }
+
+    .saveandsend,
+    .upload-logo,
+    .upload-photo,
+    .upload-offerimage {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 17px;
+        letter-spacing: 1.3px;
+        color: white;
+        background-color: #5E9EFF;
+        width: 195px;
+        height: 40px;
+        border-radius: 15px;
+        padding: 10px 35px;
+        margin: 20px auto 0 auto;
+        cursor: pointer;
+    }
+
+    .saveandsend {
+        margin: 20px auto 0 auto;
+    }
+
+    .saveandsend {
+        border: 0;
+        width: 460px;
+        height: 55px;
+    }
+
+    .filename {
+        font-size: 23px;
+        color: #5F5F5F;
+    }
+
+    .process {
+        width: 100%;
+        border: 1px solid #04CC00;
+        margin-top: 5px;
+    }
+
+    .process.-ninety {
+        width: 90%;
+    }
+
+    .process.-eighty {
+        width: 80%;
+    }
+
+    .process.-seventy {
+        width: 70%;
+    }
+
+    .process.-sixty {
+        width: 60%;
+    }
+
+    .process.-fifty {
+        width: 50%;
+    }
+
+    .process.-forty {
+        width: 40%;
+    }
+
+    .process.-thirty {
+        width: 30%;
+    }
+
+    .process.-twenty {
+        width: 20%;
+    }
+
+    .process.-ten {
+        width: 10%;
+    }
+
+    .process.-zero {
+        width: 0;
+        border: 0;
+    }
+}
+
+.profiletitle-region {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 45px auto;
+
+    .main-title {
+        font-weight: bold;
+        font-size: 35px;
+        letter-spacing: 1.7px;
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+
+.profileselector-region {
+    text-align: center;
+    margin: 0 auto 30px auto;
+
+    .account,
+    .application {
+        text-decoration: none;
+        font-weight: normal;
+        font-size: 20px;
+        background-color: #E3E3E1;
+        padding: 10px 20px;
+        letter-spacing: 0.6px;
+    }
+
+    .account {
+        border-radius: 5px 0px 0px 5px;
+    }
+
+    .application {
+        border-radius: 0px 5px 5px 0px;
+    }
+
+    .account.-active,
+    .application.-active {
+        background: #69DB67;
+    }
+
+    .personalaccount,
+    .personalapplication {
+        color: black;
+        opacity: 0.6;
+    }
+
+    .personalaccount.-active,
+    .personalapplication.-active {
+        font-weight: bold;
+        color: white;
+        opacity: 1;
+    }
+}
+
+.profiledescription-region {
+    margin: 0 auto 45px auto;
+
+    .profiledescription-title,
+    .profiledescription-description {
+        margin: 0 auto;
+    }
+
+    .profiledescription-title {
+        margin-bottom: 20px;
+    }
+
+    .descriptiontitle {
+        font-weight: 900;
+        font-size: 21px;
+        text-transform: uppercase;
+        letter-spacing: 1.1px;
+    }
+
+    .descriptiondescription {
+        font-size: 17px;
+        font-weight: 300;
+        letter-spacing: 1.3px;
+        line-height: 1.2;
+        color: #555555;
+    }
+
+    @media (max-width: 910px) {
+        text-align: center;
+    }
+}
+
+.profileimages-region {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 65px auto;
+
+    input[type=file] {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+}
+
+.profilelogo-region {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 197px;
+    min-height: 106px;
+}
+
+.profilephotos-region {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 287px;
+    min-height: 106px;
+
+    .photo-section {
+        margin-bottom: 5px;
+    }
+}
+
+.profile-form,
+.specialoffers-form,
+.generalpage-search {
+
+    .form-fields {
+        margin: 0 auto;
+    }
+
+    .form-section {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .form-section.-short {
+        max-width: 380px;
+        width: 100%;
+    }
+
+    .form-section.-upload {
+        min-height: 106px;
+    }
+
+    .formtitle {
+        letter-spacing: 1.6px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+
+    .forminput,
+    .formtextarea,
+    .ticketinput {
+        font-weight: 300;
+        box-sizing: border-box;
+        width: 100%;
+        letter-spacing: 1.6px;
+        border: 0;
+        border-radius: 15px;
+        resize: vertical;
+        padding: 15px;
+    }
+
+    .formtextarea {
+        min-height: 100px;
+    }
+
+    .ticketinput {
+        width: 105px;
+        height: 46px;
+    }
+
+    .two-fields {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .profile-services {
+        margin-bottom: 20px;
+    }
+
+    .profileservice {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 110px;
+        height: 110px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+    .servicedescription {
+        font-size: 14px;
+        padding-top: 20px;
+    }
+
+    .servicedescription.-selected {
+        color: #C91212;
+    }
+
+    .service-icon {
+        height: 60px;
+    }
+
+    input[type=checkbox] {
+        position: absolute;
+        opacity: 0;
+    }
+}
+
+.profile-services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 910px;
+    margin: 0 auto;
+
+    .formtitle {
+        margin: 0 0 20px 0;
+    }
+}
+
+.form-services,
+.generalpage-search {
+    max-width: 1450px;
+    margin: 0 auto;
+
+    .formtitle,
+    .searchtitle {
+        max-width: 910px;
+        width: 100%;
+        margin: 0 auto 20px auto;
+    }
+}
+
+.form-fields {
+
+    .form-section.-address {
+        max-width: 430px;
+    }
+
+    .formtitle {
+        margin: 0 0 20px 0;
+    }
+
+    .formcomment {
+        font-size: 15px;
+        letter-spacing: 0.2px;
+        color: #D80101;
+        margin-top: -15px;
+        margin-bottom: 25px;
+        margin-left: 20px;
+    }
+
+    @media (max-width: 650px) {
+        text-align: center;
+    }
+}
+
+.ticket-region {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    max-width: 630px;
+
+    .ticketprice {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .tickettitle {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-weight: 300;
+        font-size: 15px;
+        height: 30px;
+        color: #555555;
+        margin-bottom: 10px;
+    }
+
+}
+
+.ticket-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 110px;
+    text-align: center;
+
+}
+
+.profilespecialoffers-region {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    .specialofferstitle {
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        color: #DC2020;
+        margin-bottom: 20px;
+    }
+
+    .specialoffersdescription {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    input[type=file] {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+}
+
+.specialoffers-form {
+
+    .form-section.-short {
+        text-align: center;
+        max-width: 235px;
+    }
+
+    .formtitle {
+        margin: 0 0 10px 0;
+    }
+
+    .mainadd-button {
+        max-width: 136px;
+        height: 25px;
+        margin: 25px auto 0 auto;
+        cursor: pointer;
+    }
+
+    .addbutton {
+        width: 100%;
+    }
+
+    input[type=submit] {
+        opacity: 0;
+    }
+}

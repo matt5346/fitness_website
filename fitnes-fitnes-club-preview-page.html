@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=580, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Главная</title>
+
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+
+    <!-- Стили для JQuery modal window -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+    <!-- Стили для JQuery carousel -->
+    <link rel="stylesheet" href="libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <form id="popup_application" class="popup-sendapplication" method="POST">
+        <div>
+            <span class="applicationtitle">Сотрудник фитнес-центра свяжется с Вами и<br>расскажет о спецусловиях</span>
+            <input id="application_name" type="text" class="input" placeholder="Имя" required>
+            <input id="application_phone" type="text" class="input" placeholder="Телефон" required>
+            <input id="application_email" type="email" class="input" placeholder="E-mail" required>
+        </div>
+        <button id="application_submit" class="submit">ОТПРАВИТЬ</button>
+    </form>
+    <div class="fitnessclub-page">
+        <div class="fitnessclub-preview">
+            <div class="preview-header container">
+                <div class="preview-logotype">
+                    <span class="previewpreview">ФИТНЕС-КЛУБ</span>
+                    <img class="logotype" src="img/logotype-fitness-page.png">
+                </div>
+                <div class="preview-text">
+                    <span class="name">GYM СЕТЬ ФИТНЕС-КЛУБОВ</span>
+                    <span class="location"><img class="previewlocation" src="img/icon-location.svg">ЖЕЛЕЗНОДОРОЖНАЯ,
+                        11</span>
+                </div>
+            </div>
+            <div class="preview-categories">
+                <div class="profile-services container">
+                    <label class="profileservice -gym">
+                        <img class="service-icon" src="img/1.svg">
+                        <span class="servicedescription">Тренажерные<br>залы и кардио</span>
+                    </label>
+                    <label class="profileservice -yoga">
+                        <img class="service-icon" src="img/2.svg">
+                        <span class="servicedescription">Йога и<br>медитация</span>
+                    </label>
+                    <label class="profileservice -dancing">
+                        <img class="service-icon" src="img/3.svg">
+                        <span class="servicedescription">Танцевальные направления</span>
+                    </label>
+                    <label class="profileservice -group">
+                        <img class="service-icon" src="img/4.svg">
+                        <span class="servicedescription">Групповые занятия</span>
+                    </label>
+                    <label class="profileservice -pools">
+                        <img class="service-icon" src="img/5.svg">
+                        <span class="servicedescription">Бассейны и аквааэробика</span>
+                    </label>
+                    <label class="profileservice -bike">
+                        <img class="service-icon" src="img/6.svg">
+                        <span class="servicedescription">ESM и Wellnes тренировки</span>
+                    </label>
+                    <label class="profileservice -fight">
+                        <img class="service-icon" src="img/7.svg">
+                        <span class="servicedescription">Единоборства и самооборона</span>
+                    </label>
+                    <label class="profileservice -gymnastics">
+                        <img class="service-icon" src="img/8.svg">
+                        <span class="servicedescription">Акробатика и гимнастика</span>
+                    </label>
+                    <label class="profileservice -relax">
+                        <img class="service-icon" src="img/9.svg">
+                        <span class="servicedescription">SPA процедуры и relax</span>
+                    </label>
+                    <label class="profileservice -team">
+                        <img class="service-icon" src="img/10.svg">
+                        <span class="servicedescription">Командные виды спорта</span>
+                    </label>
+                    <label class="profileservice -various">
+                        <img class="service-icon" src="img/11.svg">
+                        <span class="servicedescription">Разные тренировки</span>
+                    </label>
+                    <label class="profileservice -bath">
+                        <img class="service-icon" src="img/12.svg">
+                        <span class="servicedescription">Баня</span>
+                    </label>
+                    <label class="profileservice -childcard">
+                        <img class="service-icon" src="img/13.svg">
+                        <span class="servicedescription">Детская карта</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="fitnessclub-carousel">
+            <div class="fitnessclub-slides container">
+                <img src="img/fitness-club-preview-carousel-image-first.png" class="photo">
+                <img src="img/fitness-club-preview-carousel-image-second.png" class="photo">
+                <img src="img/fitness-club-preview-carousel-image-third.png" class="photo">
+                <img src="img/fitness-club-preview-carousel-image-first.png" class="photo">
+                <img src="img/fitness-club-preview-carousel-image-second.png" class="photo">
+                <img src="img/fitness-club-preview-carousel-image-third.png" class="photo">
+            </div>
+            <div class="fitnessclub-buttons"></div>
+        </div>
+        <div class="fitnessclub-tariff container">
+            <span class="tarifftitle">СТОИМОСТЬ</span>
+            <div class="tariffs-region">
+                <div class="tariff-section">
+                    <span class="title -onetime">Разовое<br>посещение</span>
+                    <span class="price -dash -middle">-</span>
+                    <span class="price">300</span>
+                </div>
+                <div class="tariff-section">
+                    <span class="title -onemonth">1 месяц</span>
+                    <span class="price -middle">9700</span>
+                    <span class="price">16000</span>
+                </div>
+                <div class="tariff-section">
+                    <span class="title -threemonths">3 месяца</span>
+                    <span class="price -dash -middle">-</span>
+                    <span class="price">19000</span>
+                </div>
+                <div class="tariff-section">
+                    <span class="title -sixmonths">6 месяцев</span>
+                    <span class="price -middle">17000</span>
+                    <span class="price -dash">-</span>
+                </div>
+                <div class="tariff-section">
+                    <span class="title -twelvemonths">12 месяцев</span>
+                    <span class="price -middle">22000</span>
+                    <span class="price">55000</span>
+                </div>
+            </div>
+            <a href="#popup_application" rel="modal:open"><button class="sendapplication">ОТПРАВИТЬ ЗАЯВКУ В ФИТНЕС-КЛУБ</button></a>
+        </div>
+        <div class="fitnessclub-feedback container">
+            <span class="feedbacktitle">ОТЗЫВЫ</span>
+            <span class="comment">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in culpa qui officia deserunt mollit anim id est laborum.”</span>
+            <span class="comment">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Uti officia deserunt mollit anim id est laborum.”</span>
+            <form action="" class="leavecomment-form">
+                <span class="formtitle">Оставьте свой отзыв</span>
+                <textarea class="textarea" placeholder="Напишите отзыв..." required></textarea>
+                <input type="submit" class="submit" name="send" value="ОТПРАВИТЬ">
+            </form>
+        </div>
+        <div class="fitnessclub-sameclubs container">
+            <span class="sameclubstitle">ОЧЕНЬ ПОХОЖИЕ КЛУБЫ</span>
+            <div class="sameclubs-catalog">
+                <div class="sameclub-region">
+                    <div class="sameclub-header">
+                        <img class="sameclublogo" src="img/same-club-logo.png">
+                        <span class="sameclubname">GYM сеть фитнес-клубов<br><span class="sameclublocation"><img
+                                    class="icon-location" src="img/icon-location.svg">Железнодорожная, 11</span></span>
+                    </div>
+                    <span class="sameclubamount">Стоимость</span>
+                    <div class="tariffs-region">
+                        <div class="tariff-section">
+                            <span class="title -onetime">Разовое<br>посещение</span>
+                            <span class="amount -dash -middle">-</span>
+                            <span class="amount">300</span>
+                        </div>
+                        <div class="tariff-section">
+                            <span class="title -onemonth">1 месяц</span>
+                            <span class="amount -middle">9700</span>
+                            <span class="amount">16000</span>
+                        </div>
+                        <div class="tariff-section">
+                            <span class="title -threemonths">3 месяца</span>
+                            <span class="amount -dash -middle">-</span>
+                            <span class="amount">19000</span>
+                        </div>
+                        <div class="tariff-section">
+                            <span class="title -sixmonths">6 месяцев</span>
+                            <span class="amount -middle">17000</span>
+                            <span class="amount -dash">-</span>
+                        </div>
+                        <div class="tariff-section">
+                            <span class="title -twelvemonths">12 месяцев</span>
+                            <span class="amount -middle">22000</span>
+                            <span class="amount">55000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sameclub-region">
+                    <div class="sameclub-header">
+                        <img class="sameclublogo" src="img/same-club-logo.png">
+                        <span class="sameclubname">GYM сеть фитнес-клубов<br><span class="sameclublocation"><img
+                                    class="icon-location" src="img/icon-location.svg">Железнодорожная, 11</span></span>
+                    </div>
+                    <span class="sameclubamount">Стоимость</span>
+                    <div class="tariffs-region">
+                        <div class="tariff-section">
+                            <span class="title -onetime">Разовое<br>посещение</span>
+                            <span class="amount -dash -middle">-</span>
+                            <span class="amount">300</span>
+                        </div>
+                        <div class="tariff-section">
+                            <span class="title -onemonth">1 месяц</span>
+                            <span class="amount -middle">9700</span>
+                            <span class="amount">16000</span>
+                        </div>
+                        <div class="tariff-section">
+                            <span class="title -threemonths">3 месяца</span>
+                            <span class="amount -dash -middle">-</span>
+                            <span class="amount">19000</span>
+                        </div>
+                        <div class="tariff-section">
+                            <span class="title -sixmonths">6 месяцев</span>
+                            <span class="amount -middle">17000</span>
+                            <span class="amount -dash">-</span>
+                        </div>
+                        <div class="tariff-section">
+                            <span class="title -twelvemonths">12 месяцев</span>
+                            <span class="amount -middle">22000</span>
+                            <span class="amount">55000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Подключение JQuery -->
+    <script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
+
+    <!-- Подключение JQuery carousel -->
+    <script type="text/javascript" src="libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+    <!-- Jquery modal window -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+    <!-- Подключение JavaSCript -->
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>
